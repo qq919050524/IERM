@@ -1,0 +1,1259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72B352C2-2C56-4AF5-A1AB-B7B0F8FC334E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IERM</RootNamespace>
+    <AssemblyName>IERM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\beng\nine.css" />
+    <Content Include="css\beng\nineAndOne.css" />
+    <Content Include="css\beng\saxcXf.css" />
+    <Content Include="css\beng\sixAndTwo.css" />
+    <Content Include="css\beng\sixteen.css" />
+    <Content Include="css\beng\ten.css" />
+    <Content Include="css\beng\xf.css" />
+    <Content Include="css\bootstrap-switch\bootstrap-switch.min.css" />
+    <Content Include="css\bootstrapvalidator\bootstrapValidator.css" />
+    <Content Include="css\bootstrapvalidator\bootstrapValidator.min.css" />
+    <Content Include="css\Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="css\Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="css\Bootstrap\css\bootstrap.css" />
+    <Content Include="css\Bootstrap\css\bootstrap.min.css" />
+    <Content Include="css\Bootstrap\css\main.css" />
+    <Content Include="css\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\daterangepicker\daterangepicker-bs2.css" />
+    <Content Include="css\daterangepicker\daterangepicker-bs3.css" />
+    <Content Include="css\datetimepicker\bootstrap-datetimepicker.css" />
+    <Content Include="css\datetimepicker\bootstrap-datetimepicker.min.css" />
+    <Content Include="css\Distribution\bpd.css" />
+    <Content Include="css\Elevator\Elevator.css" />
+    <Content Include="css\HVAC\FrozenPump.css" />
+    <Content Include="css\HVAC\TowerFan.css" />
+    <Content Include="css\jquery-confirm.min.css" />
+    <Content Include="css\map\style.css" />
+    <Content Include="css\mybreadcrumb\breadcrumb.css" />
+    <Content Include="css\NtelligentLighting\NtelligentLighting.css" />
+    <Content Include="css\select2andtree\select2-bootstrap.min.css" />
+    <Content Include="css\select2andtree\select2.css" />
+    <Content Include="css\select2andtree\select2.min.css" />
+    <Content Include="css\smarticker\jquery.smarticker.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\treeview\bootstrap-treeview.min.css" />
+    <Content Include="css\webuploader.css" />
+    <Content Include="css\strap.css" />
+    <Content Include="DLL\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLL\NPOI.dll" />
+    <Content Include="DLL\NPOI.OOXML.dll" />
+    <Content Include="DLL\NPOI.OpenXml4Net.dll" />
+    <Content Include="DLL\NPOI.OpenXmlFormats.dll" />
+    <Content Include="Extend\fileinput\css\fileinput.css" />
+    <Content Include="Extend\fileinput\css\fileinput.min.css" />
+    <Content Include="Extend\fileinput\img\loading-sm.gif" />
+    <Content Include="Extend\fileinput\img\loading.gif" />
+    <Content Include="Extend\fileinput\js\fileinput.js" />
+    <Content Include="Extend\fileinput\js\fileinput.min.js" />
+    <Content Include="Extend\fileinput\js\plugins\canvas-to-blob.js" />
+    <Content Include="Extend\fileinput\js\plugins\canvas-to-blob.min.js" />
+    <Content Include="Extend\fileinput\js\plugins\purify.js" />
+    <Content Include="Extend\fileinput\js\plugins\purify.min.js" />
+    <Content Include="Extend\fileinput\js\plugins\sortable.js" />
+    <Content Include="Extend\fileinput\js\plugins\sortable.min.js" />
+    <Content Include="Extend\fileinput\js\zh.js" />
+    <Content Include="Extend\fileinput\themes\explorer\theme.css" />
+    <Content Include="Extend\fileinput\themes\explorer\theme.js" />
+    <Content Include="Extend\fileinput\themes\fa\theme.js" />
+    <Content Include="Extend\fileinput\themes\gly\theme.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="css\hover-min.css" />
+    <Content Include="css\htmleaf-demo.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\login\login.css" />
+    <Content Include="css\login\style.css" />
+    <Content Include="css\table\bootstrap-table.css" />
+    <Content Include="css\table\bootstrap-table.min.css" />
+    <Content Include="css\Wizard\prettify.css" />
+    <Content Include="font-awesome\css\font-awesome.css" />
+    <Content Include="img\background.jpg" />
+    <Content Include="img\bar\sxt.png" />
+    <Content Include="img\beng\10beng\bac.png" />
+    <Content Include="img\beng\9beng\nineBac.png" />
+    <Content Include="img\beng\nineAndOne\bac.png" />
+    <Content Include="img\beng\sixAndTwo\bac.png" />
+    <Content Include="img\beng\sixteenBeng\sixteen.png" />
+    <Content Include="img\beng\warn.png" />
+    <Content Include="img\beng\xf\saxcFireControl.png" />
+    <Content Include="img\beng\xf\xfbac.png" />
+    <Content Include="img\Elevator\alarm.png" />
+    <Content Include="img\Elevator\alarmRed.png" />
+    <Content Include="img\Elevator\bzjdq.png" />
+    <Content Include="img\Elevator\bzjdqRed.png" />
+    <Content Include="img\Elevator\cd.png" />
+    <Content Include="img\Elevator\cdRed.png" />
+    <Content Include="img\Elevator\dd.png" />
+    <Content Include="img\Elevator\ddRed.png" />
+    <Content Include="img\Elevator\elevator.png" />
+    <Content Include="img\Elevator\fpc.png" />
+    <Content Include="img\Elevator\fpcRed.png" />
+    <Content Include="img\Elevator\jx.png" />
+    <Content Include="img\Elevator\jxRed.png" />
+    <Content Include="img\Elevator\kr.png" />
+    <Content Include="img\Elevator\krRed.png" />
+    <Content Include="img\Elevator\qwtt.png" />
+    <Content Include="img\Elevator\qwttRed.png" />
+    <Content Include="img\Elevator\safe.png" />
+    <Content Include="img\Elevator\safeRed.png" />
+    <Content Include="img\Elevator\speed.png" />
+    <Content Include="img\Elevator\speedRed.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\HVAC\ldb.png" />
+    <Content Include="img\HVAC\tfj.png" />
+    <Content Include="img\NtelligentLighting\bw.png" />
+    <Content Include="img\NtelligentLighting\closeBtn.png" />
+    <Content Include="img\NtelligentLighting\dark.png" />
+    <Content Include="img\NtelligentLighting\jjr.png" />
+    <Content Include="img\NtelligentLighting\light.png" />
+    <Content Include="img\NtelligentLighting\openBtn.png" />
+    <Content Include="img\NtelligentLighting\sy.png" />
+    <Content Include="img\NtelligentLighting\yw.png" />
+    <Content Include="img\NtelligentLighting\yyt.png" />
+    <Content Include="img\smarticker\controller.png" />
+    <Content Include="img\smarticker\left-flc-b.png" />
+    <Content Include="img\smarticker\left-flc-w.png" />
+    <Content Include="img\smarticker\right-flc-b.png" />
+    <Content Include="img\smarticker\right-flc-w.png" />
+    <Content Include="img\Uploader.swf" />
+    <Content Include="js\bootstrap-switch\bootstrap-switch.min.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bootstrapvalidator\bootstrapValidator.js" />
+    <Content Include="js\bootstrapvalidator\bootstrapValidator.min.js" />
+    <Content Include="js\bootstrapvalidator\zh_CN.js" />
+    <Content Include="js\datetimepicker\bootstrap-datetimepicker.js" />
+    <Content Include="js\datetimepicker\bootstrap-datetimepicker.min.js" />
+    <Content Include="js\datetimepicker\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="js\Distribution\InitDistribution.js" />
+    <Content Include="js\echarts.js" />
+    <Content Include="js\jquery-confirm.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\layer\layer.js" />
+    <Content Include="css\layer\icon-ext.png" />
+    <Content Include="css\layer\icon.png" />
+    <Content Include="css\layer\layer.css" />
+    <Content Include="css\layer\loading-0.gif" />
+    <Content Include="css\layer\loading-1.gif" />
+    <Content Include="css\layer\loading-2.gif" />
+    <Content Include="js\layer\skin\default\icon-ext.png" />
+    <Content Include="js\layer\skin\default\icon.png" />
+    <Content Include="js\layer\skin\default\layer.css" />
+    <Content Include="js\layer\skin\default\loading-0.gif" />
+    <Content Include="js\layer\skin\default\loading-1.gif" />
+    <Content Include="js\layer\skin\default\loading-2.gif" />
+    <Content Include="js\login\cookie.js" />
+    <Content Include="js\Map\jqnav.js" />
+    <Content Include="js\MyExt.js" />
+    <Content Include="js\select2andtree\i18n\zh-CN.js" />
+    <Content Include="js\select2andtree\select2.full.js" />
+    <Content Include="js\select2andtree\select2.full.min.js" />
+    <Content Include="js\select2andtree\select2.js" />
+    <Content Include="js\select2andtree\select2.min.js" />
+    <Content Include="js\select2andtree\select2tree.js" />
+    <Content Include="js\smarticker\smarticker.js" />
+    <Content Include="js\treeview\bootstrap-treeview.min.js" />
+    <Content Include="css\ztree\img\line_conn.png" />
+    <Content Include="css\ztree\img\loading.gif" />
+    <Content Include="css\ztree\img\metro.gif" />
+    <Content Include="css\ztree\img\metro.png" />
+    <Content Include="js\ztree\jquery.ztree.all.js" />
+    <Content Include="css\ztree\metroStyle.css" />
+    <Content Include="js\webuploader.min.js" />
+    <Content Include="Handler\MonitorController.ashx" />
+    <Content Include="Handler\DataListHandler.ashx" />
+    <Content Include="Handler\EnergyStatistics.ashx" />
+    <Content Include="Handler\MonitorContent.ashx" />
+    <Content Include="Handler\UpLoadHandler.ashx" />
+    <Content Include="Handler\ElevatorHandler.ashx" />
+    <Content Include="Handler\systemmenu.ashx" />
+    <Content Include="Handler\StandardHandler.ashx" />
+    <Content Include="Handler\DeviceHandler.ashx" />
+    <Content Include="Handler\RepairOrderHandler.ashx" />
+    <Content Include="css\Bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="css\Bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="css\Bootstrap\css\bootstrap.css.map" />
+    <Content Include="css\Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="css\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Handler\InspectionOrderHandler.ashx" />
+    <Content Include="Handler\UploadImgHandler.ashx" />
+    <Content Include="Handler\ImplementHandler.ashx" />
+    <Content Include="Handler\MaintenanceOrderHandler.ashx" />
+    <Content Include="Handler\PlanHandler.ashx" />
+    <Content Include="Handler\MapHandler.ashx" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\发布.pubxml" />
+    <None Include="Service References\EccmWcf\ECCMService.wsdl" />
+    <None Include="Service References\EccmWcf\item.disco" />
+    <None Include="Service References\EccmWcf\configuration91.svcinfo" />
+    <None Include="Service References\EccmWcf\configuration.svcinfo" />
+    <None Include="Service References\EccmWcf\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Login.aspx" />
+    <Content Include="Views\CommunityManager.aspx" />
+    <Content Include="Views\DataCurve.aspx" />
+    <Content Include="Views\DataList.aspx" />
+    <Content Include="Views\Device\DeviceType.aspx" />
+    <Content Include="Views\Distribution\cshy\cshyT101.aspx" />
+    <Content Include="Views\Distribution\cshy\cshyT102.aspx" />
+    <Content Include="Views\Distribution\cshy\cshyT201.aspx" />
+    <Content Include="Views\Distribution\cshy\cshyT202.aspx" />
+    <Content Include="Views\Distribution\cshy\cshyT3.aspx" />
+    <Content Include="Views\Distribution\cshy\cshyT4.aspx" />
+    <Content Include="Views\Distribution\qchf\qchfG0501.aspx" />
+    <Content Include="Views\Distribution\qchf\qchfG0502.aspx" />
+    <Content Include="Views\Distribution\qchf\qchfG0801.aspx" />
+    <Content Include="Views\Distribution\qchf\qchfG0802.aspx" />
+    <Content Include="Views\Distribution\qchf\qchfG1001.aspx" />
+    <Content Include="Views\Distribution\qchf\qchfG1002.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc01T301.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc01T302.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc0201.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc0202.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc03T501.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc03T502.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc05TZ0601.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc05TZ0602.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc06TZ0701.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc06TZ0702.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc07T301.aspx" />
+    <Content Include="Views\Distribution\saxc\saxc08T301.aspx" />
+    <Content Include="Views\Elevator\ElevatorInfo.aspx" />
+    <Content Include="Views\Elevator\Elevator.aspx" />
+    <Content Include="Views\Elevator\ElevatorHistoryAlarm.aspx" />
+    <Content Include="Views\Elevator\ElevatorCurrentAlarm.aspx" />
+    <Content Include="Views\EnergyElectricity.aspx" />
+    <Content Include="Views\EnergyEntering.aspx" />
+    <Content Include="Views\EnergyStatistics.aspx" />
+    <Content Include="Views\EnergyWater.aspx" />
+    <Content Include="Views\EquipmentManager.aspx" />
+    <Content Include="img\16beng\bac.png" />
+    <Content Include="img\16beng\warn.png" />
+    <Content Include="img\9beng\bac.png" />
+    <Content Include="img\bpd\bigArr.png" />
+    <Content Include="img\bpd\downMiddleArr.png" />
+    <Content Include="img\bpd\downSmallArr.png" />
+    <Content Include="img\bpd\rightArr.png" />
+    <Content Include="img\bpd\tengui.jpg" />
+    <Content Include="img\bpd\upMiddleArr.png" />
+    <Content Include="img\bpd\upSmallArr.png" />
+    <Content Include="img\bpd\wgbc.png" />
+    <Content Include="img\breadcrumb.png" />
+    <Content Include="img\demo\av1.jpg" />
+    <Content Include="img\demo\av2.jpg" />
+    <Content Include="img\demo\av3.jpg" />
+    <Content Include="img\demo\av4.jpg" />
+    <Content Include="img\demo\av5.jpg" />
+    <Content Include="img\demo\demo-image1.jpg" />
+    <Content Include="img\demo\demo-image2.jpg" />
+    <Content Include="img\demo\demo-image3.jpg" />
+    <Content Include="img\demo\envelope.png" />
+    <Content Include="img\gallery\imgbox1.jpg" />
+    <Content Include="img\gallery\imgbox2.jpg" />
+    <Content Include="img\gallery\imgbox3.jpg" />
+    <Content Include="img\gallery\imgbox4.jpg" />
+    <Content Include="img\gallery\imgbox5.jpg" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\gritter.png" />
+    <Content Include="img\headimg\boy.jpg" />
+    <Content Include="img\headimg\girl.jpg" />
+    <Content Include="img\home.png" />
+    <Content Include="img\hue.png" />
+    <Content Include="img\icons.png" />
+    <Content Include="img\index\admin.png" />
+    <Content Include="img\index\exsit.png" />
+    <Content Include="img\index\message.png" />
+    <Content Include="img\index\serch.png" />
+    <Content Include="img\index\set.png" />
+    <Content Include="img\larrow.png" />
+    <Content Include="img\line.png" />
+    <Content Include="img\loader.gif" />
+    <Content Include="img\login\loginBack.gif" />
+    <Content Include="img\login\loginBox.png" />
+    <Content Include="img\login\login_pas.png" />
+    <Content Include="img\login\login_user.png" />
+    <Content Include="img\login\logo.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\map\anhui.png" />
+    <Content Include="img\map\beijing.png" />
+    <Content Include="img\map\chongqing.png" />
+    <Content Include="img\map\circle.png" />
+    <Content Include="img\map\fujian.png" />
+    <Content Include="img\map\gansu.png" />
+    <Content Include="img\map\guangdong.png" />
+    <Content Include="img\map\guangxi.png" />
+    <Content Include="img\map\guizhou.png" />
+    <Content Include="img\map\hainan.png" />
+    <Content Include="img\map\hebei.png" />
+    <Content Include="img\map\heilongjiang.png" />
+    <Content Include="img\map\henan.png" />
+    <Content Include="img\map\hubei.png" />
+    <Content Include="img\map\hunan.png" />
+    <Content Include="img\map\jiangsu.png" />
+    <Content Include="img\map\jiangxi.png" />
+    <Content Include="img\map\jilin.png" />
+    <Content Include="img\map\liaoning.png" />
+    <Content Include="img\map\map.jpg" />
+    <Content Include="img\map\map.png" />
+    <Content Include="img\map\neimeng.png" />
+    <Content Include="img\map\ningxia.png" />
+    <Content Include="img\map\qinghai.png" />
+    <Content Include="img\map\shandong.png" />
+    <Content Include="img\map\shanghai.png" />
+    <Content Include="img\map\shanxi.png" />
+    <Content Include="img\map\shanxi2.png" />
+    <Content Include="img\map\sichuan.png" />
+    <Content Include="img\map\taiwan.png" />
+    <Content Include="img\map\tianjin.png" />
+    <Content Include="img\map\xinjiang.png" />
+    <Content Include="img\map\xizang.png" />
+    <Content Include="img\map\yunnan.png" />
+    <Content Include="img\map\zhejiang.png" />
+    <Content Include="img\menu-active.png" />
+    <Content Include="img\menu\menu1.png" />
+    <Content Include="img\menu\menu2.png" />
+    <Content Include="img\qzonebg.gif" />
+    <Content Include="img\rarrow.png" />
+    <Content Include="img\saturation.png" />
+    <Content Include="img\select2.png" />
+    <Content Include="img\spinner.gif" />
+    <Content Include="img\sprite.png" />
+    <Content Include="img\tianqi\dayu.png" />
+    <Content Include="img\tianqi\duoyun.png" />
+    <Content Include="img\tianqi\qing.png" />
+    <Content Include="img\tianqi\xiaoyu.png" />
+    <Content Include="img\tianqi\yin.png" />
+    <Content Include="img\tianqi\zhongyu.png" />
+    <Content Include="img\weather\dayu.png" />
+    <Content Include="img\weather\duoyun.png" />
+    <Content Include="img\weather\qing.png" />
+    <Content Include="img\weather\xiaoyu.png" />
+    <Content Include="img\weather\yin.png" />
+    <Content Include="img\weather\zhongyu.png" />
+    <Content Include="img\xiaofang\xfbac.png" />
+    <Content Include="js\bootstrap-table.js" />
+    <Content Include="js\daterangepicker\DateFormat.js" />
+    <Content Include="js\daterangepicker\daterangepicker.js" />
+    <Content Include="js\daterangepicker\moment.js" />
+    <Content Include="js\daterangepicker\moment.min.js" />
+    <Content Include="js\DD_belatedPNG.js" />
+    <Content Include="js\jqnav.js" />
+    <Content Include="js\jquery.leoweather.min.js" />
+    <Content Include="js\jquery.weather.min.js" />
+    <Content Include="js\jquery.tmpl.min.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\login\demo.js" />
+    <Content Include="js\login\jquery.particleground.min.js" />
+    <Content Include="js\table\bootstrap-table-zh-CN.js" />
+    <Content Include="js\table\bootstrap-table-zh-CN.min.js" />
+    <Content Include="js\table\bootstrap-table.js" />
+    <Content Include="js\table\bootstrap-table.min.js" />
+    <Content Include="js\Wizard\jquery.bootstrap.wizard.js" />
+    <Content Include="js\Wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="js\Wizard\prettify.js" />
+    <Content Include="login.html" />
+    <Content Include="Views\AlarmLog.aspx" />
+    <Content Include="Views\AlarmSetting.aspx" />
+    <Content Include="Views\CurrentAlarm.aspx" />
+    <Content Include="Views\Home\Home.aspx" />
+    <Content Include="Views\HVAC\FrozenPump.aspx" />
+    <Content Include="Views\HVAC\TowerFan.aspx" />
+    <Content Include="Views\Inspection\InspectionUserOrderList.aspx" />
+    <Content Include="Views\Inspection\InspectionOrderList.aspx" />
+    <Content Include="Views\Inspection\InspectionOrderSend.aspx" />
+    <Content Include="Views\Inspection\InspectionOrderDetail.aspx" />
+    <Content Include="Views\loginOut.aspx" />
+    <Content Include="Views\MaintenanceManage.aspx" />
+    <Content Include="Views\Maintenance\MaintenanceOrderList.aspx" />
+    <Content Include="Views\Maintenance\MaintenanceOrderSend.aspx" />
+    <Content Include="Views\Maintenance\MaintenanceOrderDetail.aspx" />
+    <Content Include="Views\Maintenance\MaintenanceUserOrderList.aspx" />
+    <Content Include="Views\Map\Map.aspx" />
+    <Content Include="Views\Message\SendMessage.aspx" />
+    <Content Include="Views\monitorcontentManager.aspx" />
+    <Content Include="Views\MonitorElectricity.aspx" />
+    <Content Include="Views\MonitorFire.aspx" />
+    <Content Include="Views\Monitoring.ascx" />
+    <Content Include="Views\MonitorWater.aspx" />
+    <Content Include="Views\NtelligentLighting\NtelligentLighting.aspx" />
+    <Content Include="Views\OrderManage.aspx" />
+    <Content Include="Views\Plan\PlanList.aspx" />
+    <Content Include="Views\Plan\PlanDetail.aspx" />
+    <Content Include="Views\Repair\RepairOrderDetail.aspx" />
+    <Content Include="Views\Repair\RepairOrderList.aspx" />
+    <Content Include="Views\Repair\RepairOrderSend.aspx" />
+    <Content Include="Views\Repair\RepairUserOrderList.aspx" />
+    <Content Include="Views\RoleManage.aspx" />
+    <Content Include="Views\Standard\Standardlist.aspx" />
+    <Content Include="Views\SystemLog.aspx" />
+    <Content Include="Views\System\Menulist.aspx" />
+    <Content Include="Views\UserLog.aspx" />
+    <Content Include="Views\UserManage.aspx" />
+    <Content Include="Views\waterPump\cshy\liveWaterPump.aspx" />
+    <Content Include="Views\waterPump\cshy\sixAndTwoFire.aspx" />
+    <Content Include="Views\waterPump\cshy\sixAndTwoWaterPump.aspx" />
+    <Content Include="Views\waterPump\qchf\G10WaterPump.aspx" />
+    <Content Include="Views\waterPump\qchf\G6WaterPump.aspx" />
+    <Content Include="Views\waterPump\qchf\G9fireControl.aspx" />
+    <Content Include="Views\waterPump\saxc\fireControl.aspx" />
+    <Content Include="Views\waterPump\saxc\nineAndOneWaterPump.aspx" />
+    <Content Include="Views\waterPump\saxc\NineWaterPump.aspx" />
+    <Content Include="Views\waterPump\saxc\tenAndTwoWaterPump.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Handler\AlarmHandler.ashx.cs">
+      <DependentUpon>AlarmHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\CityAndCommunity.ashx.cs">
+      <DependentUpon>CityAndCommunity.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\DataListHandler.ashx.cs">
+      <DependentUpon>DataListHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ElevatorHandler.ashx.cs">
+      <DependentUpon>ElevatorHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\EnergyHandler.ashx.cs">
+      <DependentUpon>EnergyHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\EnergyStatistics.ashx.cs">
+      <DependentUpon>EnergyStatistics.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\EquipmentHandler.ashx.cs">
+      <DependentUpon>EquipmentHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\MapHandler.ashx.cs">
+      <DependentUpon>MapHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\PlanHandler.ashx.cs">
+      <DependentUpon>PlanHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Login.ashx.cs">
+      <DependentUpon>Login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\MaintenanceHandler.ashx.cs">
+      <DependentUpon>MaintenanceHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\MaintenanceOrderHandler.ashx.cs">
+      <DependentUpon>MaintenanceOrderHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\MonitorContent.ashx.cs">
+      <DependentUpon>MonitorContent.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\MonitorController.ashx.cs">
+      <DependentUpon>MonitorController.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\OrderHandler.ashx.cs">
+      <DependentUpon>OrderHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\InspectionOrderHandler.ashx.cs">
+      <DependentUpon>InspectionOrderHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\RepairOrderHandler.ashx.cs">
+      <DependentUpon>RepairOrderHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\RoleRelated.ashx.cs">
+      <DependentUpon>RoleRelated.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\DeviceHandler.ashx.cs">
+      <DependentUpon>DeviceHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\StandardHandler.ashx.cs">
+      <DependentUpon>StandardHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\SysLog.ashx.cs">
+      <DependentUpon>SysLog.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\SysMenu.ashx.cs">
+      <DependentUpon>SysMenu.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\systemmenu.ashx.cs">
+      <DependentUpon>systemmenu.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UpLoadHandler.ashx.cs">
+      <DependentUpon>UpLoadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ImplementHandler.ashx.cs">
+      <DependentUpon>ImplementHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\UploadImgHandler.ashx.cs">
+      <DependentUpon>UploadImgHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\User.ashx.cs">
+      <DependentUpon>User.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ValidCode.ashx.cs">
+      <DependentUpon>ValidCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\WCFHandler.ashx.cs">
+      <DependentUpon>WCFHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EccmWcf\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommunityManager.aspx.cs">
+      <DependentUpon>CommunityManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CommunityManager.aspx.designer.cs">
+      <DependentUpon>CommunityManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataCurve.aspx.cs">
+      <DependentUpon>DataCurve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DataCurve.aspx.designer.cs">
+      <DependentUpon>DataCurve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataList.aspx.cs">
+      <DependentUpon>DataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DataList.aspx.designer.cs">
+      <DependentUpon>DataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Device\DeviceType.aspx.cs">
+      <DependentUpon>DeviceType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Device\DeviceType.aspx.designer.cs">
+      <DependentUpon>DeviceType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT101.aspx.cs">
+      <DependentUpon>cshyT101.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT101.aspx.designer.cs">
+      <DependentUpon>cshyT101.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT102.aspx.cs">
+      <DependentUpon>cshyT102.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT102.aspx.designer.cs">
+      <DependentUpon>cshyT102.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT201.aspx.cs">
+      <DependentUpon>cshyT201.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT201.aspx.designer.cs">
+      <DependentUpon>cshyT201.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT202.aspx.cs">
+      <DependentUpon>cshyT202.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT202.aspx.designer.cs">
+      <DependentUpon>cshyT202.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT3.aspx.cs">
+      <DependentUpon>cshyT3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT3.aspx.designer.cs">
+      <DependentUpon>cshyT3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT4.aspx.cs">
+      <DependentUpon>cshyT4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\cshy\cshyT4.aspx.designer.cs">
+      <DependentUpon>cshyT4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG0501.aspx.cs">
+      <DependentUpon>qchfG0501.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG0501.aspx.designer.cs">
+      <DependentUpon>qchfG0501.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG0502.aspx.cs">
+      <DependentUpon>qchfG0502.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG0502.aspx.designer.cs">
+      <DependentUpon>qchfG0502.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG0801.aspx.cs">
+      <DependentUpon>qchfG0801.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG0801.aspx.designer.cs">
+      <DependentUpon>qchfG0801.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG0802.aspx.cs">
+      <DependentUpon>qchfG0802.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG0802.aspx.designer.cs">
+      <DependentUpon>qchfG0802.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG1001.aspx.cs">
+      <DependentUpon>qchfG1001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG1001.aspx.designer.cs">
+      <DependentUpon>qchfG1001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG1002.aspx.cs">
+      <DependentUpon>qchfG1002.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\qchf\qchfG1002.aspx.designer.cs">
+      <DependentUpon>qchfG1002.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc01T301.aspx.cs">
+      <DependentUpon>saxc01T301.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc01T301.aspx.designer.cs">
+      <DependentUpon>saxc01T301.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc01T302.aspx.cs">
+      <DependentUpon>saxc01T302.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc01T302.aspx.designer.cs">
+      <DependentUpon>saxc01T302.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc0201.aspx.cs">
+      <DependentUpon>saxc0201.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc0201.aspx.designer.cs">
+      <DependentUpon>saxc0201.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc0202.aspx.cs">
+      <DependentUpon>saxc0202.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc0202.aspx.designer.cs">
+      <DependentUpon>saxc0202.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc03T501.aspx.cs">
+      <DependentUpon>saxc03T501.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc03T501.aspx.designer.cs">
+      <DependentUpon>saxc03T501.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc03T502.aspx.cs">
+      <DependentUpon>saxc03T502.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc03T502.aspx.designer.cs">
+      <DependentUpon>saxc03T502.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc05TZ0601.aspx.cs">
+      <DependentUpon>saxc05TZ0601.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc05TZ0601.aspx.designer.cs">
+      <DependentUpon>saxc05TZ0601.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc05TZ0602.aspx.cs">
+      <DependentUpon>saxc05TZ0602.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc05TZ0602.aspx.designer.cs">
+      <DependentUpon>saxc05TZ0602.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc06TZ0701.aspx.cs">
+      <DependentUpon>saxc06TZ0701.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc06TZ0701.aspx.designer.cs">
+      <DependentUpon>saxc06TZ0701.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc06TZ0702.aspx.cs">
+      <DependentUpon>saxc06TZ0702.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc06TZ0702.aspx.designer.cs">
+      <DependentUpon>saxc06TZ0702.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc07T301.aspx.cs">
+      <DependentUpon>saxc07T301.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc07T301.aspx.designer.cs">
+      <DependentUpon>saxc07T301.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc08T301.aspx.cs">
+      <DependentUpon>saxc08T301.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Distribution\saxc\saxc08T301.aspx.designer.cs">
+      <DependentUpon>saxc08T301.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Elevator\ElevatorInfo.aspx.cs">
+      <DependentUpon>ElevatorInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Elevator\ElevatorInfo.aspx.designer.cs">
+      <DependentUpon>ElevatorInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Elevator\Elevator.aspx.cs">
+      <DependentUpon>Elevator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Elevator\Elevator.aspx.designer.cs">
+      <DependentUpon>Elevator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Elevator\ElevatorHistoryAlarm.aspx.cs">
+      <DependentUpon>ElevatorHistoryAlarm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Elevator\ElevatorHistoryAlarm.aspx.designer.cs">
+      <DependentUpon>ElevatorHistoryAlarm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Elevator\ElevatorCurrentAlarm.aspx.cs">
+      <DependentUpon>ElevatorCurrentAlarm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Elevator\ElevatorCurrentAlarm.aspx.designer.cs">
+      <DependentUpon>ElevatorCurrentAlarm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EnergyElectricity.aspx.cs">
+      <DependentUpon>EnergyElectricity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\EnergyElectricity.aspx.designer.cs">
+      <DependentUpon>EnergyElectricity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EnergyEntering.aspx.cs">
+      <DependentUpon>EnergyEntering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\EnergyEntering.aspx.designer.cs">
+      <DependentUpon>EnergyEntering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EnergyStatistics.aspx.cs">
+      <DependentUpon>EnergyStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\EnergyStatistics.aspx.designer.cs">
+      <DependentUpon>EnergyStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EnergyWater.aspx.cs">
+      <DependentUpon>EnergyWater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\EnergyWater.aspx.designer.cs">
+      <DependentUpon>EnergyWater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EquipmentManager.aspx.cs">
+      <DependentUpon>EquipmentManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\EquipmentManager.aspx.designer.cs">
+      <DependentUpon>EquipmentManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\AlarmLog.aspx.cs">
+      <DependentUpon>AlarmLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AlarmLog.aspx.designer.cs">
+      <DependentUpon>AlarmLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AlarmSetting.aspx.cs">
+      <DependentUpon>AlarmSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AlarmSetting.aspx.designer.cs">
+      <DependentUpon>AlarmSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CurrentAlarm.aspx.cs">
+      <DependentUpon>CurrentAlarm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CurrentAlarm.aspx.designer.cs">
+      <DependentUpon>CurrentAlarm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Home\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HVAC\FrozenPump.aspx.cs">
+      <DependentUpon>FrozenPump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\HVAC\FrozenPump.aspx.designer.cs">
+      <DependentUpon>FrozenPump.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HVAC\TowerFan.aspx.cs">
+      <DependentUpon>TowerFan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\HVAC\TowerFan.aspx.designer.cs">
+      <DependentUpon>TowerFan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inspection\InspectionUserOrderList.aspx.cs">
+      <DependentUpon>InspectionUserOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Inspection\InspectionUserOrderList.aspx.designer.cs">
+      <DependentUpon>InspectionUserOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inspection\InspectionOrderList.aspx.cs">
+      <DependentUpon>InspectionOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Inspection\InspectionOrderList.aspx.designer.cs">
+      <DependentUpon>InspectionOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inspection\InspectionOrderSend.aspx.cs">
+      <DependentUpon>InspectionOrderSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Inspection\InspectionOrderSend.aspx.designer.cs">
+      <DependentUpon>InspectionOrderSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inspection\InspectionOrderDetail.aspx.cs">
+      <DependentUpon>InspectionOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Inspection\InspectionOrderDetail.aspx.designer.cs">
+      <DependentUpon>InspectionOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\loginOut.aspx.cs">
+      <DependentUpon>loginOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\loginOut.aspx.designer.cs">
+      <DependentUpon>loginOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MaintenanceManage.aspx.cs">
+      <DependentUpon>MaintenanceManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\MaintenanceManage.aspx.designer.cs">
+      <DependentUpon>MaintenanceManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceOrderList.aspx.cs">
+      <DependentUpon>MaintenanceOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceOrderList.aspx.designer.cs">
+      <DependentUpon>MaintenanceOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceOrderSend.aspx.cs">
+      <DependentUpon>MaintenanceOrderSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceOrderSend.aspx.designer.cs">
+      <DependentUpon>MaintenanceOrderSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceOrderDetail.aspx.cs">
+      <DependentUpon>MaintenanceOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceOrderDetail.aspx.designer.cs">
+      <DependentUpon>MaintenanceOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceUserOrderList.aspx.cs">
+      <DependentUpon>MaintenanceUserOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Maintenance\MaintenanceUserOrderList.aspx.designer.cs">
+      <DependentUpon>MaintenanceUserOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Map\Map.aspx.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Map\Map.aspx.designer.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Message\SendMessage.aspx.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Message\SendMessage.aspx.designer.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\monitorcontentManager.aspx.cs">
+      <DependentUpon>monitorcontentManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\monitorcontentManager.aspx.designer.cs">
+      <DependentUpon>monitorcontentManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MonitorElectricity.aspx.cs">
+      <DependentUpon>MonitorElectricity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\MonitorElectricity.aspx.designer.cs">
+      <DependentUpon>MonitorElectricity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MonitorFire.aspx.cs">
+      <DependentUpon>MonitorFire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\MonitorFire.aspx.designer.cs">
+      <DependentUpon>MonitorFire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Monitoring.ascx.cs">
+      <DependentUpon>Monitoring.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Monitoring.ascx.designer.cs">
+      <DependentUpon>Monitoring.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MonitorWater.aspx.cs">
+      <DependentUpon>MonitorWater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\MonitorWater.aspx.designer.cs">
+      <DependentUpon>MonitorWater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NtelligentLighting\NtelligentLighting.aspx.cs">
+      <DependentUpon>NtelligentLighting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\NtelligentLighting\NtelligentLighting.aspx.designer.cs">
+      <DependentUpon>NtelligentLighting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OrderManage.aspx.cs">
+      <DependentUpon>OrderManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\OrderManage.aspx.designer.cs">
+      <DependentUpon>OrderManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Plan\PlanList.aspx.cs">
+      <DependentUpon>PlanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Plan\PlanList.aspx.designer.cs">
+      <DependentUpon>PlanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Plan\PlanDetail.aspx.cs">
+      <DependentUpon>PlanDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Plan\PlanDetail.aspx.designer.cs">
+      <DependentUpon>PlanDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Repair\RepairOrderDetail.aspx.cs">
+      <DependentUpon>RepairOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Repair\RepairOrderDetail.aspx.designer.cs">
+      <DependentUpon>RepairOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Repair\RepairOrderList.aspx.cs">
+      <DependentUpon>RepairOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Repair\RepairOrderList.aspx.designer.cs">
+      <DependentUpon>RepairOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Repair\RepairOrderSend.aspx.cs">
+      <DependentUpon>RepairOrderSend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Repair\RepairOrderSend.aspx.designer.cs">
+      <DependentUpon>RepairOrderSend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Repair\RepairUserOrderList.aspx.cs">
+      <DependentUpon>RepairUserOrderList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Repair\RepairUserOrderList.aspx.designer.cs">
+      <DependentUpon>RepairUserOrderList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoleManage.aspx.cs">
+      <DependentUpon>RoleManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RoleManage.aspx.designer.cs">
+      <DependentUpon>RoleManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Standard\Standardlist.aspx.cs">
+      <DependentUpon>Standardlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Standard\Standardlist.aspx.designer.cs">
+      <DependentUpon>Standardlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemLog.aspx.cs">
+      <DependentUpon>SystemLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\SystemLog.aspx.designer.cs">
+      <DependentUpon>SystemLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\System\Menulist.aspx.cs">
+      <DependentUpon>Menulist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\System\Menulist.aspx.designer.cs">
+      <DependentUpon>Menulist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserLog.aspx.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\UserLog.aspx.designer.cs">
+      <DependentUpon>UserLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserManage.aspx.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\UserManage.aspx.designer.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\cshy\liveWaterPump.aspx.cs">
+      <DependentUpon>liveWaterPump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\cshy\liveWaterPump.aspx.designer.cs">
+      <DependentUpon>liveWaterPump.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\cshy\sixAndTwoFire.aspx.cs">
+      <DependentUpon>sixAndTwoFire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\cshy\sixAndTwoFire.aspx.designer.cs">
+      <DependentUpon>sixAndTwoFire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\cshy\sixAndTwoWaterPump.aspx.cs">
+      <DependentUpon>sixAndTwoWaterPump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\cshy\sixAndTwoWaterPump.aspx.designer.cs">
+      <DependentUpon>sixAndTwoWaterPump.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\qchf\G10WaterPump.aspx.cs">
+      <DependentUpon>G10WaterPump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\qchf\G10WaterPump.aspx.designer.cs">
+      <DependentUpon>G10WaterPump.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\qchf\G6WaterPump.aspx.cs">
+      <DependentUpon>G6WaterPump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\qchf\G6WaterPump.aspx.designer.cs">
+      <DependentUpon>G6WaterPump.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\qchf\G9fireControl.aspx.cs">
+      <DependentUpon>G9fireControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\qchf\G9fireControl.aspx.designer.cs">
+      <DependentUpon>G9fireControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\saxc\nineAndOneWaterPump.aspx.cs">
+      <DependentUpon>nineAndOneWaterPump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\saxc\nineAndOneWaterPump.aspx.designer.cs">
+      <DependentUpon>nineAndOneWaterPump.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\saxc\fireControl.aspx.cs">
+      <DependentUpon>fireControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\saxc\fireControl.aspx.designer.cs">
+      <DependentUpon>fireControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\saxc\NineWaterPump.aspx.cs">
+      <DependentUpon>NineWaterPump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\saxc\NineWaterPump.aspx.designer.cs">
+      <DependentUpon>NineWaterPump.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\waterPump\saxc\tenAndTwoWaterPump.aspx.cs">
+      <DependentUpon>tenAndTwoWaterPump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\waterPump\saxc\tenAndTwoWaterPump.aspx.designer.cs">
+      <DependentUpon>tenAndTwoWaterPump.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\Descr.WD3" />
+    <Content Include="Handler\Login.ashx" />
+    <Content Include="Handler\ValidCode.ashx" />
+    <Content Include="font-awesome\css\Descr.WD3" />
+    <Content Include="font-awesome\font\Descr.WD3" />
+    <Content Include="font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="font-awesome\font\fontawesome-webfont.eot%40" />
+    <Content Include="font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="font-awesome\font\useso.com" />
+    <Content Include="Handler\SysMenu.ashx" />
+    <Content Include="Handler\RoleRelated.ashx" />
+    <Content Include="Handler\User.ashx" />
+    <Content Include="Handler\CityAndCommunity.ashx" />
+    <Content Include="Handler\SysLog.ashx" />
+    <Content Include="Handler\AlarmHandler.ashx" />
+    <Content Include="Handler\EnergyHandler.ashx" />
+    <Content Include="Handler\EquipmentHandler.ashx" />
+    <Content Include="Handler\MaintenanceHandler.ashx" />
+    <Content Include="Handler\OrderHandler.ashx" />
+    <Content Include="Handler\WCFHandler.ashx" />
+    <None Include="Service References\EccmWcf\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EccmWcf\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IERM.BLL\IERM.BLL.csproj">
+      <Project>{8c70b2e4-418a-4a8f-90ba-88710e933c8f}</Project>
+      <Name>IERM.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IERM.Common\IERM.Common.csproj">
+      <Project>{ba9ac358-0d4e-44b4-9406-b14d64c57a60}</Project>
+      <Name>IERM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IERM.Model\IERM.Model.csproj">
+      <Project>{fddae0b1-2858-4909-832a-479ad4f5c081}</Project>
+      <Name>IERM.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\EccmWcf\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13333</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8003/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:8003/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

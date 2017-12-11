@@ -1,0 +1,132 @@
+2017-11-08 10:38:52,814 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9684] DEBUG logApp - cmdstr:usp_authaction---ExecuteToDataTable:PROCEDURE neweccm.usp_authaction does not exist
+
+2017-11-08 10:38:52,854 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9684] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 10:38:54,070 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9424] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 10:38:54,098 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9424] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 10:38:54,484 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9692] DEBUG logApp - cmdstr: select* from view_communityinfo a  LEFT JOIN usercommunityrelative b ON a.communityID = b.communityID  WHERE  b.userID = 15  and isdel=0  order by sort asc---ExecuteToDataTable:Table 'neweccm.view_communityinfo' doesn't exist
+
+2017-11-08 10:38:57,969 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9424] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 10:38:57,991 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9424] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 10:39:04,907 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9424] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 10:39:04,931 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9424] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 10:39:05,299 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9424] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 10:39:05,321 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9424] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 10:39:06,033 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9684] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 10:39:06,054 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9684] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:08:00,336 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [10848] DEBUG logApp - cmdstr:usp_authaction---ExecuteToDataTable:PROCEDURE neweccm.usp_authaction does not exist
+
+2017-11-08 15:08:00,372 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [10848] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:08:01,452 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [10300] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 15:08:01,474 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [10300] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:08:01,732 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [8300] DEBUG logApp - cmdstr: select* from view_communityinfo a  LEFT JOIN usercommunityrelative b ON a.communityID = b.communityID  WHERE  b.userID = 15  and isdel=0  order by sort asc---ExecuteToDataTable:Table 'neweccm.view_communityinfo' doesn't exist
+
+2017-11-08 15:18:48,035 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:usp_authaction---ExecuteToDataTable:PROCEDURE neweccm.usp_authaction does not exist
+
+2017-11-08 15:18:48,070 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:18:49,280 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [8300] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 15:18:49,302 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [8300] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:18:49,523 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr: select* from view_communityinfo a  LEFT JOIN usercommunityrelative b ON a.communityID = b.communityID  WHERE  b.userID = 15  and isdel=0  order by sort asc---ExecuteToDataTable:Table 'neweccm.view_communityinfo' doesn't exist
+
+2017-11-08 15:18:51,581 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 15:18:51,601 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:20:35,152 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 15:20:53,467 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 15:21:37,684 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:SELECT * from view_sysmenu order by mSort asc---ExecuteToDataTable:Table 'neweccm.view_sysmenu' doesn't exist
+
+2017-11-08 15:21:37,706 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:24:41,162 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [5484] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:24:44,109 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [5484] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:26:43,486 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:27:00,729 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [4960] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:28:26,685 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [12368] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:31:36,105 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [13268] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:34:32,428 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [2244] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:35:40,934 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [11504] DEBUG logApp - cmdstr:usp_authaction---ExecuteToDataTable:PROCEDURE neweccm.usp_authaction does not exist
+
+2017-11-08 15:35:40,969 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [11504] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:35:42,163 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [5484] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:35:44,700 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [5484] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 15:36:12,546 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [11048] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 16:09:57,747 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [6008] DEBUG logApp - cmdstr:usp_authaction---ExecuteToDataTable:PROCEDURE neweccm.usp_authaction does not exist
+
+2017-11-08 16:09:57,784 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [6008] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 16:09:58,996 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [6008] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 16:10:12,269 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [12556] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 16:10:39,595 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [12556] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 16:10:43,715 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [10252] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 16:10:52,400 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [6008] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 16:11:00,398 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [6008] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 16:11:03,613 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [12556] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 16:11:07,263 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [10860] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 17:23:57,913 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9384] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 17:24:08,736 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [11808] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 17:24:22,080 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [11808] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 17:25:42,029 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [7784] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 17:26:06,479 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [8804] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 17:26:14,928 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [9384] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 19:10:03,997 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [6200] DEBUG logApp - cmdstr:usp_authaction---ExecuteToDataTable:PROCEDURE neweccm.usp_authaction does not exist
+
+2017-11-08 19:10:04,020 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [6200] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 19:10:04,333 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [7940] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 19:10:07,373 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [6200] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 19:10:12,396 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [7940] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 19:10:20,351 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [7940] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 19:10:29,115 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [14048] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 19:10:36,147 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [7352] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+
+2017-11-08 19:12:15,985 18 E:\WorkSpace\Eccm\trunk\IERM\FX.ECCM.COMMON\LogHelper.cs [14048] DEBUG logApp - cmdstr:usp_authcommunity---ExecuteToDataTable:PROCEDURE neweccm.usp_authcommunity does not exist
+

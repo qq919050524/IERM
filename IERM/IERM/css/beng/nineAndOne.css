@@ -1,0 +1,262 @@
+﻿.tag {
+	width: 1.33%;
+	height: 3.18%;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.yx {
+	background: #166f22;
+}
+
+.tz {
+	background: #d91313;
+}
+
+.gz {
+	background: #fff000;
+}
+
+.bengImg {
+	width: 100%;
+	height: 100%;
+}
+.tank {
+    width: 4.96%;
+    height: 4.38%;
+    background: #404040;
+    color: #fff;
+    font-size: 0.18rem;
+    position: absolute;
+    left: 77.28%;
+    top: 47.83%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.temperature {
+	position: absolute;
+	width: 4.46%;
+	height: 4.38%;
+	background: #404040;
+	color: #fff;
+	font-size: 0.18rem;
+	user-select: none;
+	-webkit-user-select: ? none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	cursor: pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/*圆点样式*/
+
+.ImgWarp {
+	width: 74%;
+	height: 92%;
+	position: relative;
+}
+/*泵状态*/
+.pumpOne {
+    left: 21.1%;
+    top: 87%;
+}
+/*高区*/
+
+.highTem {
+	top: 6.2%;
+	left: 24.85%;
+}
+
+.highTagOne {
+	top: 12.8%;
+	left: 43.5%;
+}
+
+.highTagTwo {
+	top: 16.8%;
+	left: 47.4%;
+}
+
+.highTagThree {
+	left: 51.3%;
+	top: 22%;
+}
+
+
+/*中区*/
+
+.midTem {
+	top: 34%;
+	left: 25%;
+}
+
+.midTagOne {
+	left: 43.5%;
+	top: 39.5%;
+}
+
+.midTagTwo {
+	left: 47.4%;
+	top: 44.5%;
+}
+
+.midTagThree {
+	left: 51.3%;
+	top: 49.5%;
+}
+
+
+/*低区*/
+
+.downTem {
+	left: 25%;
+	top: 62%;
+}
+
+.downTagOne {
+	left: 43.5%;
+	top: 67%;
+}
+
+.downTagTwo {
+	left: 47.4%;
+	top: 72%;
+}
+
+.downTagThree {
+	left: 51.3%;
+	top: 77%;
+}
+/*底部*/
+
+.wordIntro {
+	width: 100%;
+	background: #e2e2e2;
+	font-size: 0.16rem;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wordIntroLeft {
+	width: 24%;
+	height: 100%;
+	float: left;
+	padding-left: 1.23rem;
+	padding-top: 0.72rem;
+}
+
+.wordIntroMid {
+	width: 36%;
+	height: 86%;
+	float: left;
+	margin-top: 1.1%;
+	border-left: 1px solid #000;
+}
+
+.wordIntroRight {
+	width: 40%;
+	height: 86%;
+	float: left;
+	border-left: 1px solid #000;
+	margin-top: 1.1%;
+}
+
+.wordIntroUl {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wordIntroA {
+	color: #444444;
+}
+
+.midLeft {
+	float: left;
+}
+
+.midRight {
+	float: right;
+	margin-right: 0.45rem;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #444;
+	cursor: pointer;
+}
+
+.leftA {
+	color: #2473b6;
+	width: 15px;
+	float: left;
+	line-height: 122%;
+	margin: 0 0.24rem;
+}
+
+.firstP {
+	margin: 0 0 0.05rem 0;
+	text-align: center;
+}
+
+.wordIntroLi {
+	letter-spacing: 2px;
+	margin-bottom: 0.08rem;
+}
+
+.footertag {
+	background: #4e4e4e;
+	color: #fff;
+	margin-right: 0.05rem;
+	padding: 0 0.08rem;
+}
+
+.introDetail {
+	width: 86%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.ulOne,
+.ulTwo,
+.ulThree,
+.ulFour,
+.ulFive,
+.ulSix {
+	list-style: none;
+	margin: 0;
+	/*padding: 0;*/
+	position: relative;
+}
+
+.bengLine {
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	background: black;
+	position: absolute;
+	right: -0.23rem;
+	top: 0.05rem;
+}
+
+.detaiLi {
+	margin-top: 0.15rem;
+}
+
+.detailA {
+	color: #444;
+}
+
+.xfline {
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	background: black;
+	position: absolute;
+	right: -0.45rem;
+	top: 0.05rem;
+}

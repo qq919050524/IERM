@@ -1,0 +1,133 @@
+﻿/*body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+    font-family: Microsoft YaHei,'宋体', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    font-size:15px;
+}*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+    body, body.full-height-layout #page-wrapper, body.full-height-layout #wrapper, html {
+        height: 100%;
+    }
+
+.pace-done #page-wrapper, .pace-done .footer, .pace-done .nav-header, .pace-done .navbar-static-side, .pace-done li.active {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+
+#breadcrumbs {
+    position: relative;
+    z-index: auto;
+    border-bottom: 1px solid #E5E5E5;
+    background-color: #F5F5F5;
+    min-height: 41px;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+}
+
+
+.breadcrumb {
+    background-color: transparent;
+    line-height: 40px;
+    margin: 6px 22px 0 12px;
+    padding: 12px 0px 0px 0px;
+    font-size: 13px;
+    color: #333;
+    border-radius: 0;
+}
+
+    .breadcrumb .home-icon {
+        font-size: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+.page-content {
+    background-color: #FFF;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#content-main {
+    height: calc(100% - 10px) !important;
+    overflow: hidden;
+}
+
+button {
+    border-radius: 0px !important;
+}
+
+.btn {
+    border-radius: 0px !important;
+}
+
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+    border-radius: 0px !important;
+}
+
+.btn-lg {
+    border-radius: 0px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #E5E5E5;
+}
+
+.dropdown-menu > li > a:hover {
+    background: #E5E5E5;
+}
+
+.input-group[class*="col-"] {
+    float: none;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*子页面*/
+.wrapper-content {
+    margin-top: -20px;
+    padding: 0px 20px 0px 20px;
+}
+
+#actions {
+    margin: 2em 0;
+    -webkit-transition: all .10s;
+    transition: all .10s;
+}
+
+/*table*/
+.table-hover > tbody > tr:hover {
+    background-color: #E5E5E5;
+}
+
+
+/*按钮最下居中*/
+.btn-footer {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 0px;
+    background-color:white;
+}
+
+.bs-checkbox {
+    vertical-align: middle !important;
+}

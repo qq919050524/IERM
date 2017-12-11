@@ -1,0 +1,259 @@
+
+.ImgWarp {
+	width: 74%;
+	height: 93.5%;
+	position: relative;
+}
+
+.nineImg {
+	width: 100%;
+	height: 100%;
+}
+
+.temperature {
+	position: absolute;
+	width: 5.4%;
+	height: 4.08%;
+	background: #404040;
+	color: #fff;
+	font-size: 0.18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag {
+	width: 1.42%;
+	height: 2.53%;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.yx {
+	background: #166f22;
+}
+
+.tz {
+	background: #d91313;
+}
+
+.gz {
+	background: #fff000;
+}
+
+
+/*中区*/
+
+.midTem {
+	left: 17.26%;
+	top: 42.38%;
+}
+
+.midTagOne {
+	left: 45.96%;
+	top: 48.35%;
+}
+
+.midTagTwo {
+	left: 50%;
+	top: 53.68%;
+}
+
+.midTagThree {
+	left: 54.2%;
+	top: 59.77%;
+}
+
+
+/*高区*/
+
+.highTem {
+	left: 21.12%;
+	top: 9.26%;
+}
+
+.highTagOne {
+	left: 46.06%;
+	top: 16.49%;
+}
+
+.highTagTwo {
+	left: 50.1%;
+	top: 21.31%;
+}
+
+.highTagThree {
+	left: 54.2%;
+	top: 27.61%;
+}
+
+
+/*低区*/
+
+.downTem {
+	left: 17.2%;
+	top: 75%;
+}
+
+.downTagOne {
+	left: 45.96%;
+	top: 80.32%;
+}
+
+.downTagTwo {
+	left: 50%;
+	top: 86.29%;
+}
+
+.downTagThree {
+	left: 54.1%;
+	top: 92.51%;
+}
+
+
+/*水箱*/
+
+.tank {
+	width: 4.96%;
+	height: 4.38%;
+	background: #404040;
+	color: #fff;
+	font-size: 0.18rem;
+	position: absolute;
+	left: 81.48%;
+	top: 55.83%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/*底部*/
+
+.wordIntro {
+	width: 100%;
+	background: #e2e2e2;
+	font-size: 0.16rem;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wordIntroLeft {
+	width: 24%;
+	height: 100%;
+	float: left;
+	padding-left: 1.23rem;
+	padding-top: 0.72rem;
+}
+
+.wordIntroMid {
+	width: 36%;
+	height: 86%;
+	float: left;
+	margin-top: 1.1%;
+	border-left: 1px solid #000;
+}
+
+.wordIntroRight {
+	width: 40%;
+	height: 86%;
+	float: left;
+	border-left: 1px solid #000;
+	margin-top: 1.1%;
+}
+
+.wordIntroUl {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wordIntroA {
+	color: #444444;
+}
+
+.midLeft {
+	float: left;
+}
+
+.midRight {
+	float: right;
+	margin-right: 0.45rem;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #444;
+	cursor: pointer;
+}
+
+.leftA {
+	color: #2473b6;
+	width: 15px;
+	float: left;
+	line-height: 122%;
+	margin: 0 0.24rem;
+}
+
+.firstP {
+	margin: 0 0 0.05rem 0;
+	text-align: center;
+}
+
+.wordIntroLi {
+	letter-spacing: 2px;
+	margin-bottom: 0.08rem;
+}
+
+.footertag {
+	background: #4e4e4e;
+	color: #fff;
+	margin-right: 0.05rem;
+	padding: 0 0.08rem;
+}
+
+.introDetail {
+	width: 86%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.ulOne,
+.ulTwo,
+.ulThree,
+.ulFour,
+.ulFive,
+.ulSix {
+	list-style: none;
+	margin: 0;
+	/*padding: 0;*/
+	position: relative;
+}
+
+.bengLine {
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	background: black;
+	position: absolute;
+	right: -0.23rem;
+	top: 0.05rem;
+}
+
+.detaiLi {
+	margin-top: 0.15rem;
+}
+
+.detailA {
+	color: #444;
+}
+
+.xfline {
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	background: black;
+	position: absolute;
+	right: -0.45rem;
+	top: 0.05rem;
+}

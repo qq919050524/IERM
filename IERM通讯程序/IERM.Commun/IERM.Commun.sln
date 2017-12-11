@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.MODEL", "IERM.MODEL\IERM.MODEL.csproj", "{C8366859-324F-4E1B-9F49-445A918512B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.DAL", "IERM.DAL\IERM.DAL.csproj", "{C4EA593C-C909-4791-9D88-9929454B933F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.WCFService", "IERM.COMMUN\IERM.WCFService.csproj", "{C4CBEEAD-1D61-4A9F-BF39-B1AF8A639092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.Common", "IERM.COMMON\IERM.Common.csproj", "{565B6B2F-A313-4016-AC54-0CEC21759C8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.BLL", "IERM.BLL\IERM.BLL.csproj", "{457264A8-75D5-490A-AA30-AEF5BCAEB827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.IService", "IERM.IService1\IERM.IService.csproj", "{D7588CF2-A8AE-4986-828B-099D91798A59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8366859-324F-4E1B-9F49-445A918512B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8366859-324F-4E1B-9F49-445A918512B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8366859-324F-4E1B-9F49-445A918512B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8366859-324F-4E1B-9F49-445A918512B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4EA593C-C909-4791-9D88-9929454B933F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4EA593C-C909-4791-9D88-9929454B933F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4EA593C-C909-4791-9D88-9929454B933F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4EA593C-C909-4791-9D88-9929454B933F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CBEEAD-1D61-4A9F-BF39-B1AF8A639092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CBEEAD-1D61-4A9F-BF39-B1AF8A639092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CBEEAD-1D61-4A9F-BF39-B1AF8A639092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CBEEAD-1D61-4A9F-BF39-B1AF8A639092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565B6B2F-A313-4016-AC54-0CEC21759C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565B6B2F-A313-4016-AC54-0CEC21759C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565B6B2F-A313-4016-AC54-0CEC21759C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565B6B2F-A313-4016-AC54-0CEC21759C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{457264A8-75D5-490A-AA30-AEF5BCAEB827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{457264A8-75D5-490A-AA30-AEF5BCAEB827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{457264A8-75D5-490A-AA30-AEF5BCAEB827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{457264A8-75D5-490A-AA30-AEF5BCAEB827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7588CF2-A8AE-4986-828B-099D91798A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7588CF2-A8AE-4986-828B-099D91798A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7588CF2-A8AE-4986-828B-099D91798A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7588CF2-A8AE-4986-828B-099D91798A59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

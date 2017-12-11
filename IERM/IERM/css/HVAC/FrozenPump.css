@@ -1,0 +1,309 @@
+.introImg {
+	width: 100%;
+	height: 74%;
+	display: flex;
+	justify-content: center;
+	background: #fff;
+	align-items: center;
+}
+
+.ImgWarp {
+	width: 89%;
+	height: 75%;
+	position: relative;
+}
+
+.ldbImg {
+	width: 100%;
+	height: 100%;
+}
+
+.statu {
+	width: 4.8%;
+	height: 7.1%;
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+
+.zlj2 {
+	left: 7%;
+	top: 60.79%;
+}
+
+.zlj1 {
+	left: 7%;
+	top: 0;
+}
+
+.yx {
+	border: 2px solid #166f22;
+	color: #166f22;
+}
+
+.yx:before {
+	content: "运行";
+}
+
+.tz {
+	border: 2px solid #d91313;
+	color: #d91313;
+}
+
+.tz:before {
+	content: "停止";
+}
+
+.circle {
+	display: inline-block;
+	width: 1.6%;
+	height: 4.3%;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.ciryx {
+	background: #166f22;
+}
+
+.cirtz {
+	background: #d91313;
+}
+
+.circle1 {
+	left: 31.68%;
+	top: 70.32%;
+}
+
+.circle2 {
+	left: 35.43%;
+	top: 78.77%;
+}
+
+.circle3 {
+	left: 39.1%;
+	top: 87.41%;
+}
+
+.number {
+	color: #444;
+	position: absolute;
+}
+
+.topMpaNum,
+.topSsdNum,
+.botMpaNum,
+.botSsdNum {
+	font-size: 0.18rem;
+}
+
+.midTopMpas,
+.midTopSsds,
+.midBotMpas,
+.midBotSsds,
+.lastMpaNum {
+	font-size: 0.14rem;
+	display: flex;
+	align-items: center;
+}
+
+.topMpaNum {
+	left: 34.89%;
+	top: -2%;
+}
+
+.topSsdNum {
+	left: 46.48%;
+	top: -2%;
+}
+
+.botMpaNum {
+	left: 52.98%;
+	top: 60.15%;
+}
+
+.botSsdNum {
+	top: 60.15%;
+	left: 62.42%;
+}
+
+.midTopMpas {
+	left: 83%;
+	top: 27.51%;
+}
+
+.midTopSsds {
+	left: 72.5%;
+	top: 27.51%;
+}
+
+.midBotMpas {
+	left: 83%;
+	top: 71.94%;
+}
+
+.midBotSsds {
+	left: 72.5%;
+	top: 71.94%;
+}
+
+.lastMpaNum {
+	left: 94.4%;
+	top: 49.1%;
+}
+
+.topMpa,
+.topSsd,
+.botMpa,
+.botSsd {
+	padding: 0.03rem 0.2rem;
+	background: #404040;
+	color: #fff;
+	display: inline-block;
+}
+
+.midTopMpa,
+.midTopSsd,
+.midBotMpa,
+.midBotSsd,
+.lastMpa {
+	background: #404040;
+	color: #fff;
+	width: 2.37vw;
+	height: 1vw;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*底部*/
+
+.wordIntro {
+	width: 100%;
+	height: 100%;
+	background: #e2e2e2;
+	font-size: 0.16rem;
+}
+
+.wordIntroLeft {
+	width: 24%;
+	height: 100%;
+	float: left;
+	padding-left: 1.23rem;
+	padding-top: 0.72rem;
+}
+
+.wordIntroMid {
+	width: 36%;
+	height: 86%;
+	float: left;
+	margin-top: 1.1%;
+	border-left: 1px solid #000;
+}
+
+.wordIntroRight {
+	width: 40%;
+	height: 86%;
+	float: left;
+	border-left: 1px solid #000;
+	margin-top: 1.1%;
+}
+
+.wordIntroUl {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wordIntroA {
+	color: #444444;
+}
+
+.midLeft {
+	float: left;
+}
+
+.midRight {
+	float: right;
+	margin-right: 0.45rem;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #444;
+	cursor: pointer;
+}
+
+.leftA {
+	color: #2473b6;
+	width: 15px;
+	float: left;
+	line-height: 122%;
+	margin: 0 0.24rem;
+}
+
+.firstP {
+	margin: 0 0 0.05rem 0;
+	text-align: center;
+}
+
+.wordIntroLi {
+	letter-spacing: 2px;
+	margin-bottom: 0.08rem;
+}
+
+.footertag {
+	background: #4e4e4e;
+	color: #fff;
+	margin-right: 0.05rem;
+	padding: 0 0.08rem;
+}
+
+
+/*底部*/
+
+.wordIntro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.introDetail {
+	width: 86%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.ulOne,
+.ulTwo,
+.ulThree,
+.ulFour,
+.ulFive,
+.ulSix {
+	list-style: none;
+	margin: 0;
+	/*padding: 0;*/
+	position: relative;
+}
+
+.bengLine {
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	background: black;
+	position: absolute;
+	right: -0.23rem;
+	top: 0.05rem;
+}
+
+.detaiLi {
+	margin-top: 0.15rem;
+}
+
+.detailA {
+	color: #444;
+}

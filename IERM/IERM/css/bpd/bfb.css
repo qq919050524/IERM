@@ -1,0 +1,542 @@
+﻿/*@media (max-height: 768px) {*/
+
+@media (max-width: 1366px) {
+	.ulTwo,
+	.ulThree,
+	.ulFour {
+		margin: 0px 5.2vw!important;
+		padding: 0;
+	}
+	.threhe:before {
+		left: 2px!important;
+	}
+	.threhe:after {
+		left: 2px!important;
+	}
+	.twehe:after {
+		left: -3px!important;
+	}
+	.twehe:before {
+		left: -3px!important;
+	}
+	.bpdLi {
+		padding-top: 8.6%!important;
+	}
+	.tenFa {
+		top: 23vw!important;
+	}
+	.tenDesk {
+		top: 23.6vw!important;
+	}
+	.introduce ul li {
+		line-height: 1.5vw!important;
+	}
+	.index {
+		padding-bottom: 662px!important;
+	}
+	.ulOne {
+		margin-top: 0px;
+	}
+	#header {
+		height: 57px!important;
+	}
+	#header h1 {
+		top: -17px!important;
+	}
+	.title {
+		top: -39px!important;
+	}
+	#search {
+		top: 11px!important;
+	}
+	.mainNav {
+		top: 8px!important;
+	}
+	.panel-heading {
+		padding: 5px 15px!important;
+	}
+	.elehe {
+		right: -18px!important;
+	}
+	.twehe {
+		right: -15px!important;
+	}
+}
+
+@media (max-width: 1440px) {
+	.tenFa {
+		top: 25vw!important;
+	}
+	.tenDesk {
+		top: 25.6vw!important;
+	}
+	.twehe {
+		right: -1vw!important;
+	}
+	.twehe:before {
+		left: -3px!important;
+	}
+	.twehe:after {
+		left: -3px!important;
+	}
+	.threhe:before{
+		left:2px!important;
+	}
+	.threhe:after{
+		left:2px!important;
+	}
+	.bpdLi{
+		padding-top: 12.78%!important;
+	}
+}
+
+@media (max-width: 1502px) {
+	.ulTwo,
+	.ulThree,
+	.ulFour {
+		margin: 0 4.2vw!important;
+		padding: 0;
+	}
+}
+
+@media (max-width: 1280px) {
+	.ulTwo,
+	.ulThree,
+	.ulFour {
+		margin: 0 4.5vw!important;
+		padding: 0;
+	}
+}
+
+@media (max-width: 1140px) {
+	.ulTwo,
+	.ulThree,
+	.ulFour {
+		margin: 0 3.6vw!important;
+		padding: 0;
+	}
+	.introduce {
+		padding: 0px 1.84vw!important;
+	}
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: SimHei;
+}
+
+.container-16 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+
+/*默认样式修改*/
+
+.panel {
+	margin-bottom: 0px!important;
+}
+
+.panel-body {
+	padding: 0!important;
+}
+
+.container-fluid {
+	padding-right: 0px!important;
+	padding-left: 0px!important;
+}
+
+.container-fluid .panel-default {
+	padding-bottom: 0px!important;
+}
+
+#content {
+	padding-bottom: 0px!important;
+}
+
+
+/*10和11柜*/
+
+.content {
+	padding-top: 50px;
+	height: 86%;
+}
+
+.eleve {
+	width: 5.66%;
+	height: 82.89%;
+	float: left;
+	border-right: 0.52vw solid #d50000;
+	position: relative;
+}
+
+.eleveDesk {
+	display: inline-block;
+	width: 1.3vw;
+	text-align: center;
+	padding: 4px 0px;
+	position: absolute;
+	top: 9.5vw;
+	left: 1.82vw;
+	background: #404040;
+	color: #fff;
+	font-size: 0.85vw;
+}
+
+.elehe {
+	display: inline-block;
+	width: 28px;
+	position: absolute;
+	top: 10vw;
+	font-size: 20px;
+	background: #d50000;
+	text-align: center;
+	color: #fff;
+	padding: 10px 0;
+	right: -18px;
+	border: 5px solid #fff;
+}
+
+.elehe:before {
+	content: url(../../img/bpd/upMiddleArr.png);
+	position: absolute;
+	top: -62px;
+	left: -2px;
+}
+
+.elehe:after {
+	content: url(../../img/bpd/downMiddleArr.png);
+	position: absolute;
+	top: 82px;
+	left: -2px;
+}
+
+.tenDesk {
+	display: inline-block;
+	width: 1.3vw;
+	text-align: center;
+	padding: 4px 0px;
+	position: absolute;
+	top: 20.6vw;
+	left: 1.82vw;
+	background: #404040;
+	font-size: 0.85vw;
+	color: #fff;
+}
+
+.tenFa {
+	display: inline-block;
+	width: 3vw;
+	height: 5vw;
+	position: absolute;
+	top: 20vw;
+	right: -1.71vw;
+}
+
+.tenFaImg {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*12柜*/
+
+.twe {
+	width: 14.87%;
+	height: 83.89%;
+	float: left;
+	border-top: 0.52vw solid #d50000;
+	border-right: 0.26vw solid #d50000;
+	position: relative;
+}
+
+.tweDesk {
+	background: #404040;
+	color: #fff;
+	position: absolute;
+	top: -2.63vw;
+	right: -2.18vw;
+	font-size: 0.85vw;
+	padding: 0.3vw 0.9vw;
+}
+
+.twehe {
+	display: inline-block;
+	width: 28px;
+	position: absolute;
+	top: 9.5vw;
+	font-size: 20px;
+	background: #d50000;
+	text-align: center;
+	color: #fff;
+	padding: 10px 0;
+	right: -0.885vw;
+	border: 5px solid #fff;
+}
+
+.twehe:before {
+	content: url(../../img/bpd/upMiddleArr.png);
+	position: absolute;
+	top: -76px;
+	left: -4px;
+}
+
+.twehe:after {
+	content: url(../../img/bpd/downMiddleArr.png);
+	position: absolute;
+	top: 115px;
+	left: -4px;
+}
+
+.tenArr {
+	display: inline-block;
+	width: 45px;
+	height: 28px;
+	position: absolute;
+	bottom: -28px;
+	background: url(../../img/bpd/bigArr.png);
+	right: -24px;
+}
+
+
+/*13号柜*/
+
+.thre {
+	width: 9.15%;
+	height: 58.89%;
+	float: left;
+	position: relative;
+	border-right: 0.26vw solid #d50000;
+	border-top: 0.52vw solid #d50000;
+}
+
+.threDesk {
+	background: #404040;
+	color: #fff;
+	position: absolute;
+	top: -2.63vw;
+	right: -2.18vw;
+	font-size: 0.85vw;
+	padding: 0.3vw 0.9vw;
+}
+
+.threhe {
+	display: inline-block;
+	width: 28px;
+	position: absolute;
+	top: 35%;
+	font-size: 20px;
+	background: #d50000;
+	text-align: center;
+	color: #fff;
+	padding: 10px 0;
+	right: -15px;
+	border: 5px solid #fff;
+}
+
+.threhe:before {
+	content: url(../../img/bpd/upSmallArr.png);
+	position: absolute;
+	top: -76px;
+	left: 4px;
+}
+
+.threhe:after {
+	content: url(../../img/bpd/downSmallArr.png);
+	position: absolute;
+	top: 115px;
+	left: 4px;
+}
+
+.threIco {
+	display: inline-block;
+	width: 104px;
+	height: 100px;
+	position: absolute;
+	bottom: -96px;
+	background: url(../../img/bpd/wgbc.png);
+	right: -53px;
+}
+
+.wgbc {
+	position: absolute;
+	bottom: -125px;
+	right: -34px;
+}
+
+
+/*14号柜*/
+
+.redBorder {
+	width: 9.15%;
+	height: auto;
+	border-top: 0.52vw solid #d50000;
+	float: left;
+}
+
+.centerBlock {
+	width: 11.26%;
+	height: auto;
+	float: left;
+	position: relative;
+	border-top: 0.52vw solid #d50000;
+}
+
+.bpdUl {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.bpdLi {
+	border-bottom: 2px solid #d50000;
+	border-left: 0.26vw solid #d50000;
+	width: 76%;
+	display: inline-block;
+	text-align: center;
+	padding-top: 6.78%;
+	font-size: 0.85vw;
+	position: relative;
+	color: #444;
+}
+
+.centerDesk {
+	font-size: 0.85vw;
+	padding: 0.3vw 0.9vw;
+	background: #404040;
+	color: #fff;
+	position: absolute;
+	top: -2.63vw;
+	right: 3vw;
+}
+
+.xfdt {
+	display: block;
+	height: 0.9vw;
+	font-size: 0.75vw;
+}
+
+.status {
+	position: absolute;
+	bottom: -0.85vw;
+	left: 32.32%;
+	color: #fff;
+	padding: 1px 0.6vw;
+	border: 0.2vw solid #fff;
+}
+
+.ulHe:before {
+	content: "合";
+}
+
+.ulHe {
+	background: #d50000;
+}
+
+.ulFen:before {
+	content: "分";
+}
+
+.ulFen {
+	background: #166F22;
+}
+
+.bg {
+	margin-top: 0.3vw;
+	margin-bottom: 0.8vw;
+	display: inline-block;
+	height: 1vw;
+	font-size: 0.75vw;
+}
+
+.redArr {
+	display: inline-block;
+	width: 9px;
+	height: 14px;
+	position: absolute;
+	background: url(../../img/bpd/rightArr.png);
+	bottom: -8px;
+	right: 0;
+}
+
+
+/*15号柜*/
+
+.five {
+	width: 187px;
+	height: auto;
+	float: left;
+	position: relative;
+	border-top: 10px solid #d50000;
+}
+
+.fiftyDesk {
+	font-size: 14px;
+	padding: 7px 15px;
+	background: #404040;
+	color: #fff;
+	position: absolute;
+	top: -43px;
+	right: 63px;
+}
+
+
+/*16号柜*/
+
+
+/*参数说明*/
+
+.introduce {
+	background: #e2e2e2;
+	margin-top: 15px;
+	width: 100%;
+	clear: both;
+	font-size: 1vw;
+	color: #444444;
+	position: relative;
+	padding-left: 100px;
+}
+
+ul {
+	float: left;
+	list-style: none;
+}
+
+.introDetail {
+	margin: 0 auto;
+	padding: 5px 0;
+}
+
+.ulOne {
+	margin-right: 1.6vw;
+}
+
+.ulTwo,
+.ulThree,
+.ulFour,
+.ulFive {
+	margin-left: 7.6vw;
+	margin-right: 1.6vw;
+	padding: 0;
+}
+
+.ulOne,
+.ulSix {
+	padding: 0;
+}
+
+.introduce ul li {
+	line-height: 1.7vw;
+}
+
+.spanReg {
+	background: #4e4e4e;
+	color: #fff;
+	padding: 2px 0.52vw;
+	margin-right: 0.36vw;
+}

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM", "IERM\IERM.csproj", "{72B352C2-2C56-4AF5-A1AB-B7B0F8FC334E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{619978DF-9B4F-4603-AD8B-08A1837E678E} = {619978DF-9B4F-4603-AD8B-08A1837E678E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.DAL", "IERM.DAL\IERM.DAL.csproj", "{619978DF-9B4F-4603-AD8B-08A1837E678E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.BLL", "IERM.BLL\IERM.BLL.csproj", "{8C70B2E4-418A-4A8F-90BA-88710E933C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.Model", "IERM.Model\IERM.Model.csproj", "{FDDAE0B1-2858-4909-832A-479AD4F5C081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IERM.Common", "IERM.Common\IERM.Common.csproj", "{BA9AC358-0D4E-44B4-9406-B14D64C57A60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72B352C2-2C56-4AF5-A1AB-B7B0F8FC334E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B352C2-2C56-4AF5-A1AB-B7B0F8FC334E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B352C2-2C56-4AF5-A1AB-B7B0F8FC334E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B352C2-2C56-4AF5-A1AB-B7B0F8FC334E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619978DF-9B4F-4603-AD8B-08A1837E678E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619978DF-9B4F-4603-AD8B-08A1837E678E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619978DF-9B4F-4603-AD8B-08A1837E678E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619978DF-9B4F-4603-AD8B-08A1837E678E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C70B2E4-418A-4A8F-90BA-88710E933C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C70B2E4-418A-4A8F-90BA-88710E933C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C70B2E4-418A-4A8F-90BA-88710E933C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C70B2E4-418A-4A8F-90BA-88710E933C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDAE0B1-2858-4909-832A-479AD4F5C081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDAE0B1-2858-4909-832A-479AD4F5C081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDAE0B1-2858-4909-832A-479AD4F5C081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDAE0B1-2858-4909-832A-479AD4F5C081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA9AC358-0D4E-44B4-9406-B14D64C57A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9AC358-0D4E-44B4-9406-B14D64C57A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9AC358-0D4E-44B4-9406-B14D64C57A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9AC358-0D4E-44B4-9406-B14D64C57A60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

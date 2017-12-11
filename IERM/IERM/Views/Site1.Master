@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.Master.cs" Inherits="IERM.Views.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="/css/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="/css/htmleaf-demo.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <style type="text/css">
+        span {
+            font-size: 0.16rem !important;
+        }
+
+        #content {
+            font-size: 0.18rem !important;
+        }
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="cph_css" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.leoweather.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="row headerRow">
+            <div class="col-md-2 ver">
+                <div class="logoH">
+                    <img src="/img/logo.png" class="logoImg">
+                </div>
+            </div>
+            <div class="col-md-2 ver">
+                <a class="title">智慧设备运行监控管理系统<span class="small"></span></a>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-2 ver">
+            </div>
+            <div class="col-md-2 ver">
+                <ul class="headerNav">
+                    <li class="headerNavLi">
+                        <a class="headerNavA">
+                            <img src="/img/index/admin.png" class="headerImg"></a>
+                        <a class="headerWord ad">
+                            <asp:Label ID="lbl_user" runat="server" Text=""></asp:Label></a>
+                    </li>
+                    <%--  <li class="headerNavLi">
+                        <a class="headerNavA">
+                            <img src="/img/index/message.png" class="headerImg"></a>
+                        <a class="headerWord mes">消息</a>
+                    </li>
+                    <li class="headerNavLi">
+                        <a class="headerNavA">
+                            <img src="/img/index/set.png" class="headerImg"></a>
+                        <a class="headerWord mes">设置</a>
+                    </li>--%>
+                    <li class="headerNavLi">
+                        <a class="headerNavA">
+                            <img src="/img/index/exsit.png" class="headerImg"></a>
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="headerWord mes" NavigateUrl="~/Views/loginOut.aspx">退出</asp:HyperLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <ul class="nav sidebar-nav">
+            <li>
+                <a href="/Views/Home/Home.aspx"><span class="yjbefore cur-sy"></span>首页</a>
+            </li>
+            <% foreach (var item in menus)
+                {%>
+            <li id="m<%=item.mid%>" class="dropdown">
+                <a href="javascript:void()" class="dropdown-toggle" data-toggle="dropdown"><span class="<%=item.menuIco%>"></span><%=item.menuName %></a>
+                <ul class="dropdown-menu" role="menu">
+                    <%foreach (var citem in item.cmList)
+                        {%>
+                    <li class="subDropLi">
+                        <a href="<%=citem.menuUrl%>"><span class="<%=citem.menuIco %>"></span><%=citem.menuName%></a>
+                    </li>
+                    <%} %>
+                </ul>
+            </li>
+            <% }%>
+            <li class="weather">
+                <script>
+                    $('.weather').leoweather({
+                        format: '<dl class="weatherDl"><dt class="weatherDt"><a class="nowYear">{年}年</a><a class="nowDay">{月}月{日}日</a></dt><dd class="weatherDd"><span class="weatherIco icons-{图标}"></span><br /><span class="temper">{气温}℃</span></dd></dl>'
+                    });
+                </script>
+            </li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <asp:ContentPlaceHolder ID="cph_body" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <script type="text/javascript">
+
+        /*
+ 获取url参数
+ 2017年5月11日 14:54:48 by 潘阳
+ */
+        function request(paras) {
+            var url = location.href;
+            var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+            var paraObj = {}
+            for (i = 0; j = paraString[i]; i++) {
+                paraObj[j.substring(0, j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=") + 1, j.length);
+            }
+            var returnValue = paraObj[paras.toLowerCase()];
+            if (typeof (returnValue) == "undefined") {
+                return "";
+            } else {
+                return returnValue;
+            }
+        }
+        $(function () {
+            var trigger = $('.hamburger'),
+                overlay = $('.overlay'),
+                isClosed = false;
+
+            trigger.click(function () {
+                hamburger_cross();
+            });
+
+            function hamburger_cross() {
+
+                if (isClosed == true) {
+                    overlay.hide();
+                    trigger.removeClass('is-open');
+                    trigger.addClass('is-closed');
+                    isClosed = false;
+                } else {
+                    overlay.show();
+                    trigger.removeClass('is-closed');
+                    trigger.addClass('is-open');
+                    isClosed = true;
+                }
+            }
+
+            $('[data-toggle="offcanvas"]').click(function () {
+                $('#wrapper').toggleClass('toggled');
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="cph_script" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

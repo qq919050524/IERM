@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ECCMService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8765/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8765/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IECCMService_GetDataByDevID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByDevID" />
+  </wsdl:message>
+  <wsdl:message name="IECCMService_GetDataByDevID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByDevIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IECCMService_GetLiftRunData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiftRunData" />
+  </wsdl:message>
+  <wsdl:message name="IECCMService_GetLiftRunData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiftRunDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IECCMService_GetLiftDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiftDetail" />
+  </wsdl:message>
+  <wsdl:message name="IECCMService_GetLiftDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiftDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IECCMService_GetLiftVideo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiftVideo" />
+  </wsdl:message>
+  <wsdl:message name="IECCMService_GetLiftVideo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiftVideoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IECCMService">
+    <wsdl:operation name="GetDataByDevID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IECCMService/GetDataByDevID" message="tns:IECCMService_GetDataByDevID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IECCMService/GetDataByDevIDResponse" message="tns:IECCMService_GetDataByDevID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLiftRunData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IECCMService/GetLiftRunData" message="tns:IECCMService_GetLiftRunData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IECCMService/GetLiftRunDataResponse" message="tns:IECCMService_GetLiftRunData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLiftDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IECCMService/GetLiftDetail" message="tns:IECCMService_GetLiftDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IECCMService/GetLiftDetailResponse" message="tns:IECCMService_GetLiftDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLiftVideo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IECCMService/GetLiftVideo" message="tns:IECCMService_GetLiftVideo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IECCMService/GetLiftVideoResponse" message="tns:IECCMService_GetLiftVideo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IECCMService" type="tns:IECCMService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDataByDevID">
+      <soap:operation soapAction="http://tempuri.org/IECCMService/GetDataByDevID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLiftRunData">
+      <soap:operation soapAction="http://tempuri.org/IECCMService/GetLiftRunData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLiftDetail">
+      <soap:operation soapAction="http://tempuri.org/IECCMService/GetLiftDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLiftVideo">
+      <soap:operation soapAction="http://tempuri.org/IECCMService/GetLiftVideo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ECCMService">
+    <wsdl:port name="BasicHttpBinding_IECCMService" binding="tns:BasicHttpBinding_IECCMService">
+      <soap:address location="http://localhost:8765/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

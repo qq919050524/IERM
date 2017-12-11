@@ -1,0 +1,67 @@
+.introImg {
+	position: relative;
+}
+
+.ImgWarp {
+	width: 60.9%;
+	height: 98%;
+	position: relative;
+}
+
+.lightImg,
+.darkImg,
+.opBtnImg,
+.cloBtnImg,
+.msImg {
+	width: 100%;
+	height: 100%;
+}
+
+.zmBtn {
+	position: absolute;
+	right: 0.86rem;
+	bottom: 0.32rem;
+	width: 1.35rem;
+	height: 1.35rem;
+}
+
+.zmBtn:hover {
+	cursor: pointer;
+}
+
+.msUl {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.msLi {
+	width: 1.9rem;
+	height: 0.56rem;
+	background: #8b8b8b;
+}
+
+.msWord {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.18rem;
+    color:#fff;
+}
+.msWord:hover{
+	color: #fff;
+	background: #26a9e3;
+}
+.ms {
+	margin-right: 0.2rem;
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.3rem;
+}

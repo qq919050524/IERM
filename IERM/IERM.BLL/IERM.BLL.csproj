@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C70B2E4-418A-4A8F-90BA-88710E933C8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IERM.BLL</RootNamespace>
+    <AssemblyName>IERM.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmElevatorBLL.cs" />
+    <Compile Include="AlarmLogBLL.cs" />
+    <Compile Include="AlarmSettingBLL.cs" />
+    <Compile Include="AlarmTypeBLL.cs" />
+    <Compile Include="CityInfoBLL.cs" />
+    <Compile Include="EccmDeviceTypeBLL .cs" />
+    <Compile Include="EccmPlanDeviceBLL.cs" />
+    <Compile Include="EccmPlanDevicetypeBLL.cs" />
+    <Compile Include="EccmImplementImgBLL.cs" />
+    <Compile Include="EccmInspectionOrderBLL.cs" />
+    <Compile Include="EccmMaintenanceOrderBLL.cs" />
+    <Compile Include="EccmMaintenanceOrderImplementBLL.cs" />
+    <Compile Include="EccmOrderDeviceStandardBLL.cs" />
+    <Compile Include="EccmPlanBLL.cs" />
+    <Compile Include="EccmReceiverUserBLL.cs" />
+    <Compile Include="EccmRepairOrderBLL.cs" />
+    <Compile Include="EccmInspectionOrderImplementBLL.cs" />
+    <Compile Include="EccmRepairOrderImplementBLL.cs" />
+    <Compile Include="EccmStandardBLL.cs" />
+    <Compile Include="ElevatorInfoBLL.cs" />
+    <Compile Include="CommunityInfoBLL.cs" />
+    <Compile Include="DataListBLL.cs" />
+    <Compile Include="DevHouseSysTypeBLL.cs" />
+    <Compile Include="DeviceRelationBLL.cs" />
+    <Compile Include="DevInfoBLL.cs" />
+    <Compile Include="DevTypeBLL.cs" />
+    <Compile Include="EnergyInfoBLL.cs" />
+    <Compile Include="EnergyStatisticsBLL.cs" />
+    <Compile Include="EnergyTypeBLL.cs" />
+    <Compile Include="EquipmentAccBLL.cs" />
+    <Compile Include="EquipmentInfoBLL.cs" />
+    <Compile Include="MainTenanceLogBLL.cs" />
+    <Compile Include="MainTenanceSettingBLL.cs" />
+    <Compile Include="MainTenanceTypeBLL.cs" />
+    <Compile Include="MonitorContentBLL.cs" />
+    <Compile Include="MonitorPageBLL.cs" />
+    <Compile Include="OperationLogBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyInfoBLL.cs" />
+    <Compile Include="PumpHouseRdBLL.cs" />
+    <Compile Include="RightInfoBLL.cs" />
+    <Compile Include="EccmRoleMenuRelationBLL.cs" />
+    <Compile Include="RoleInfoBLL.cs" />
+    <Compile Include="SendMessageBLL.cs" />
+    <Compile Include="SwitchRoomRdBLL.cs" />
+    <Compile Include="SysMenuBLL.cs" />
+    <Compile Include="SystemTypeBLL.cs" />
+    <Compile Include="UserInfoBLL.cs" />
+    <Compile Include="UserLogBLL.cs" />
+    <Compile Include="ViewMonitorContentBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IERM.Common\IERM.Common.csproj">
+      <Project>{ba9ac358-0d4e-44b4-9406-b14d64c57a60}</Project>
+      <Name>IERM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IERM.DAL\IERM.DAL.csproj">
+      <Project>{619978df-9b4f-4603-ad8b-08a1837e678e}</Project>
+      <Name>IERM.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IERM.Model\IERM.Model.csproj">
+      <Project>{fddae0b1-2858-4909-832a-479ad4f5c081}</Project>
+      <Name>IERM.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

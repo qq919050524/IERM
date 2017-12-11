@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{619978DF-9B4F-4603-AD8B-08A1837E678E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IERM.DAL</RootNamespace>
+    <AssemblyName>IERM.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FX.ECCM\DLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmElevatorDAL.cs" />
+    <Compile Include="AlarmLogDAL.cs" />
+    <Compile Include="AlarmSettingDAL.cs" />
+    <Compile Include="AlarmTypeDAL.cs" />
+    <Compile Include="CityInfoDAL.cs" />
+    <Compile Include="EccmDeviceTypeDAL.cs" />
+    <Compile Include="EccmPlanDeviceDAL.cs" />
+    <Compile Include="EccmPlanDevicetypeDAL.cs" />
+    <Compile Include="EccmImplementImgDAL.cs" />
+    <Compile Include="EccmInspectionOrderDAL.cs" />
+    <Compile Include="EccmPlanDAL.cs" />
+    <Compile Include="EccmMaintenanceOrderDAL.cs" />
+    <Compile Include="EccmMaintenanceOrderImplementDAL.cs" />
+    <Compile Include="EccmOrderDeviceStandardDAL.cs" />
+    <Compile Include="EccmReceiverUserDAL.cs" />
+    <Compile Include="EccmRepairOrderDAL.cs" />
+    <Compile Include="EccmInspectionOrderImplementDAL.cs" />
+    <Compile Include="EccmRepairOrderImplementDAL.cs" />
+    <Compile Include="EccmStandardDAL.cs" />
+    <Compile Include="ElevatorInfoDAL.cs" />
+    <Compile Include="CommunityInfoDAL.cs" />
+    <Compile Include="DataListDAL.cs" />
+    <Compile Include="DevHouseSysTypeDAL.cs" />
+    <Compile Include="DeviceRelationDAL.cs" />
+    <Compile Include="DevInfoDAL.cs" />
+    <Compile Include="DevTypeDAL.cs" />
+    <Compile Include="EnergyInfoDAL.cs" />
+    <Compile Include="EnergyStatisticsDAL.cs" />
+    <Compile Include="EnergyTypeDAL.cs" />
+    <Compile Include="EquipmentAccDAL.cs" />
+    <Compile Include="EquipmentInfoDAL.cs" />
+    <Compile Include="MainTenanceLogDAL.cs" />
+    <Compile Include="MainTenanceSettingDAL.cs" />
+    <Compile Include="MainTenanceTypeDAL.cs" />
+    <Compile Include="MonitorContentDAL.cs" />
+    <Compile Include="MonitorPageDAL.cs" />
+    <Compile Include="OperationLogDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyInfoDAL.cs" />
+    <Compile Include="PumpHouseRdDAL.cs" />
+    <Compile Include="RightInfoDAL.cs" />
+    <Compile Include="EccmRoleMenuRelationDAL.cs" />
+    <Compile Include="RoleInfoDAL.cs" />
+    <Compile Include="SendMessageDAL.cs" />
+    <Compile Include="SwitchRoomRdDAL.cs" />
+    <Compile Include="SysMenuDAL.cs" />
+    <Compile Include="SystemTypeDAL.cs" />
+    <Compile Include="UserInfoDAL.cs" />
+    <Compile Include="UserLogDAL.cs" />
+    <Compile Include="ViewMonitorContentDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IERM.Common\IERM.Common.csproj">
+      <Project>{ba9ac358-0d4e-44b4-9406-b14d64c57a60}</Project>
+      <Name>IERM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IERM.Model\IERM.Model.csproj">
+      <Project>{fddae0b1-2858-4909-832a-479ad4f5c081}</Project>
+      <Name>IERM.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

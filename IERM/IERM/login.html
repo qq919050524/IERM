@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/login/login.css" rel="stylesheet" />
+    <link href="css/login/style.css" rel="stylesheet" />
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/login/jquery.particleground.min.js"></script>
+    <script src="js/msgBox.js"></script>
+    <script src="js/login/cookie.js"></script>
+</head>
+
+<body>
+    <div id="particles" class="warp">
+        <div class="logo">
+            <h1>
+                <img src="/img/login/logo.png" class="logoImg">
+            </h1>
+        </div>
+        <div class="intro">
+            <div class="detail">
+                <form id="f1">
+                    <img src="/img/login/loginBox.png" class="loginBox">
+                    <input type="text" id="loginname" name="loginname" class="account" placeholder="请输入账号" />
+                    <input type="password" id="password" name="pwd" class="pwd" placeholder="请输入密码 " />
+                    <input type="text" name="vcode" id="vcode" class="code" placeholder="验证码 " />
+                    <img src="Handler/ValidCode.ashx" title="看不清？点我换一张" class="codeImg">
+                    <input type="checkbox" id="reb" name="reb" class="remBtn" style="display:none"/><label class="remWord" for="reb" style="display:none">记住密码</label>
+                </form>
+                <button id="btn_login" class="loginBtn">登&nbsp;&nbsp;录</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/login/demo.js"></script>
+    <script type="text/javascript">
+        var msgBox = new MsgBox({ imghref: "/img/" });
+        $(function () {
+            //验证码点击切换
+            $('.codeImg').click(function () {
+                $('.codeImg').attr("src", "Handler/ValidCode.ashx?r=" + Math.random());
+            });
+            $("input").keydown(function (event) {
+                if (event.which == 13)
+                {
+                    $('#btn_login').click();
+                }
+            });
+            //登录按钮
+            $('#btn_login').click(function () {
+                //验证输入
+                if ($('#loginname').val().length == 0)
+                {
+                    msgBox.showMsgErrSide("loginname", "登录名不能为空！", true);
+                    return false;
+                }
+                //密码
+                if ($('#password').val().length == 0) {
+                    msgBox.showMsgErrSide("password", "密码不能为空！",true);
+                    return false;
+                }
+                //密码
+                if ($('#vcode').val().length == 0) {
+                    msgBox.showMsgErrSide("vcode", "验证码不能为空！", true);
+                    return false;
+                }
+                //验证登录
+                $.post("Handler/Login.ashx", $('#f1').serialize(), function (data) {
+                    if (data.IsSucceed) {
+                        window.location.href = data.RedirectUrl;
+                    } else {
+                        msgBox.showMsgErrSide("reb", data.Msg, true);
+                    }
+                }, "json");
+            });
+            
+            //IsRemember();
+        });
+
+        function IsRemember()
+        {
+            //msgBox.showMsgInfoSide("reb", "让我想想,记不记得您？", true);
+            //$.getJSON("Handler/Login.ashx", null, function (data) {
+            //    if (data.IsSucceed) {
+                   
+            //    }
+            //});
+            var loginname = $.cookie("loginname");
+            if (loginname != null) {
+                $('#loginname').val(loginname);
+               
+            }
+            //获取密码存在
+            var pwd = $.cookie("userpwd");
+            if (pwd != null)
+            {
+                $('#password').val(pwd);
+                $("#reb").attr("checked", true);
+            }
+            
+            
+        }
+
+        window.onresize = function () {
+            $('.intro').css({
+                'margin-top': -($('.intro').height() / 2),
+                'margin-left': -($('.intro').width() / 2)
+            });
+        };
+    </script>
+</body>
+
+</html>

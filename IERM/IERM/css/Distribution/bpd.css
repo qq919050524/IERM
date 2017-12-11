@@ -1,0 +1,512 @@
+@media(min-width:1024px) {
+	html {
+		font-size: 69px!important;
+	}
+	.bpdImg {
+		padding-top: 0.45rem!important;
+		height: 85.6%!important;
+	}
+	.status {
+		height: 0.32rem!important;
+		bottom: -0.18rem!important;
+	}
+	.smallForm {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 1366px) {
+	html {
+		font-size: 72px!important;
+	}
+}
+
+@media(min-width:1440px) {
+	html {
+		font-size: 75px!important;
+	}
+}
+
+@media (min-width: 1680px) {
+	html {
+		font-size: 84px!important;
+	}
+}
+
+@media(min-width:1920px) {
+	html {
+		font-size: 100px!important;
+	}
+}
+
+.headerRow,
+.heightAll {
+	height: 100%;
+}
+
+
+/*垂直居中*/
+
+.ver {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	height: 100%;
+}
+
+
+/*内容*/
+
+.detail {
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+
+.detail .detailSearch {
+	height: 7.6%;
+	width: 100%;
+}
+
+.bpdImg {
+	width: 100%;
+	height: 84.6%;
+	background: #fff;
+	padding-top: 0.65rem;
+	display: flex;
+	justify-content: center;
+}
+
+.wordIntro {
+	width: 100%;
+	height: 7.7%;
+	background: #e2e2e2;
+}
+
+
+/*共用*/
+
+.sideHe,.sideFen {
+	display: inline-block;
+	width: 0.38rem;
+	height: 0.75rem;
+	line-height: 0.65rem;
+	position: absolute;
+	color: #fff;
+	border: 0.05rem solid #fff;
+	text-align: center;
+	font-size: 0.2rem;
+}
+
+.heBefore {
+	width: 0.24rem;
+	height: 0.31rem;
+	position: absolute;
+	background: url(../../img/bpd/upMiddleArr.png)no-repeat;
+	background-size: contain;
+}
+
+.heAfter {
+	width: 0.24rem;
+	height: 0.31rem;
+	position: absolute;
+	background: url(../../img/bpd/downMiddleArr.png)no-repeat;
+	background-size: contain;
+}
+
+.panelHeight {
+	height: 100%;
+	margin-bottom: 0!important;
+}
+
+.panelVer {
+	display: flex;
+	align-items: center;
+}
+
+
+/*十一号柜*/
+
+.ele {
+	width: 5.66%;
+	height: 89.9%;
+	border-right: 0.1rem solid #d50000;
+	position: relative;
+	float: left;
+}
+
+.eleLogo {
+	display: inline-block;
+	width: 0.7rem;
+	height: 1.2rem;
+	right: -0.4rem;
+	bottom: 0.72rem;
+	position: absolute;
+}
+
+.eleImg {
+	width: 100%;
+	height: 100%;
+}
+
+.elegui {
+	display: inline-block;
+	width: 0.27rem;
+	font-size: 0.14rem;
+	background: #404040;
+	color: #fff;
+	padding: 0.06rem 0;
+	text-align: center;
+	position: absolute;
+	top: 2.39rem;
+	left: 0.2rem;
+}
+
+.eleHe:before {
+	content: "合";
+}
+
+.eleHe {
+	right: -0.24rem;
+	top: 2.38rem;
+	background: #d50000;
+}
+
+.eleFen:before {
+	content: "分";
+}
+
+.eleFen {
+	right: -0.24rem;
+	top: 2.38rem;
+	background: #166F22;
+}
+
+.eleBe {
+	top: 1.68rem;
+	right: -0.16rem;
+}
+
+.eleAf {
+	top: 3.6rem;
+	right: -0.16rem;
+}
+
+.tengui {
+	display: inline-block;
+	width: 0.27rem;
+	font-size: 0.14rem;
+	background: #404040;
+	color: #fff;
+	padding: 0.06rem 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0.9rem;
+	left: 0.2rem;
+}
+
+.byq {
+	color: #444;
+	position: absolute;
+	bottom: 0.6rem;
+	left: 0.3rem;
+    font-size:0.14rem;
+}
+.introOneLi {
+    font-size: 0.16rem;
+}
+
+/*十二号柜*/
+
+.gui {
+	background: #404040;
+	font-size: 0.14rem;
+	display: inline-block;
+	width: 0.75rem;
+	height: 0.27rem;
+	position: absolute;
+    color:#fff;
+}
+
+.twe {
+	position: relative;
+	width: 14.87%;
+	height: 89.84%;
+	border-top: 0.1rem solid #d50000;
+	border-right: 0.05rem solid #d50000;
+	float: left;
+}
+
+.twegui {
+	top: -0.43rem;
+	right: -0.45rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tweHe:before {
+	content: "合";
+}
+
+.tweHe {
+	right: -0.2rem;
+	top: 2.35rem;
+	background: #d50000;
+}
+
+.tweFen:before {
+	content: "分";
+}
+
+.tweFen {
+	right: -0.2rem;
+	top: 2.35rem;
+	background: #166F22;
+}
+
+.tweBe {
+	top: 1.7rem;
+	right: -0.14rem;
+}
+
+.tweAf {
+	top: 3.4rem;
+	right: -0.14rem;
+}
+
+.arr {
+	display: inline-block;
+	width: 0.45rem;
+	height: 0.28rem;
+	position: absolute;
+	bottom: -0.05rem;
+	right: -0.25rem;
+}
+
+.arrImg {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*十三号柜*/
+
+.thre {
+	float: left;
+	width: 9.15%;
+	height: 63.27%;
+	position: relative;
+	border-top: 0.1rem solid #d50000;
+	border-right: 0.05rem solid #d50000;
+}
+
+.threHe:before {
+	content: "合";
+}
+
+.threHe {
+	right: -0.21rem;
+	top: 2.4rem;
+	background: #d50000;
+}
+
+.threFen:before {
+	content: "分";
+}
+
+.threFen {
+	right: -0.21rem;
+	top: 2.4rem;
+	background: #166F22;
+}
+
+.threBefore {
+	width: 0.14rem;
+	height: 0.19rem;
+	position: absolute;
+	background: url(../../img/bpd/upSmallArr.png)no-repeat;
+	background-size: contain;
+	top: 2rem;
+	right: -0.1rem;
+}
+
+.threAfter {
+	width: 0.14rem;
+	height: 0.19rem;
+	position: absolute;
+	background: url(../../img/bpd/downSmallArr.png)no-repeat;
+	background-size: contain;
+	top: 3.4rem;
+	right: -0.1rem;
+}
+
+
+/*十四号柜*/
+
+.four {
+	width: 9.15%;
+	height: 63.27%;
+	float: left;
+	position: relative;
+	border-top: 0.1rem solid #d50000;
+}
+
+.trangleImg {
+	display: inline-block;
+	width: 1.04rem;
+	height: 1rem;
+	background: url(../../img/bpd/wgbc.png);
+	background-size: contain;
+	position: absolute;
+	bottom: -0.96rem;
+	right: -0.54rem;
+}
+
+.fourWord {
+	color: #ccc;
+	font-size: 0.18rem;
+	position: absolute;
+	bottom: -1.3rem;
+	right: -0.42rem;
+	display: inline-block;
+	width: 0.8rem;
+}
+
+
+/*14号柜*/
+
+.center {
+	float: left;
+	position: relative;
+	width: 1.87rem;
+	border-top: #d50000 solid 0.1rem;
+    height:100%;
+}
+
+.centerDesk {
+	top: -0.43rem;
+	left: 0.54rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.xfdt,
+.bg {
+	color: #444;
+	position: relative;
+	z-index: 3;
+}
+
+.centerUl {
+	list-style: none;
+	padding: 0;
+	font-size: 0.14rem;
+	width: 90%;
+    height:100%;
+	text-align: center;
+}
+
+.centerLi {
+	position: relative;
+	border-left: 0.05rem solid #d50000;
+	border-bottom: 0.02rem solid #d50000;
+	display: inline-block;
+	width: 100%;
+    height:10%;
+}
+
+.xfdt {
+	margin-top: 10%;
+	display: inline-block;
+}
+
+.bg {
+	display: block;
+}
+
+.status {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0.65rem;
+	height: 0.36rem;
+	position: absolute;
+	bottom: -0.2rem;
+	left: 0.5rem;
+	border: 0.05rem solid #fff;
+	color: #fff;
+	z-index: 1;
+}
+
+.ulFen {
+	background: #166F22;
+}
+
+.ulFen:before {
+	content: "分";
+}
+
+.ulHe {
+	background: #d50000;
+}
+
+.ulHe:before {
+	content: "合";
+}
+
+.redArr {
+	display: inline-block;
+	width: 0.09rem;
+	height: 0.15rem;
+	position: absolute;
+	bottom: -0.09rem;
+	right: -0.02rem;
+	background: url(../../img/bpd/rightArr.png)no-repeat;
+	background-size: contain;
+}
+
+
+/*参数说明*/
+
+.introOne,
+.introTwo,
+.introThree {
+	list-style: none;
+	padding: 0;
+	margin-left: 0.35rem;
+}
+
+.introOne {
+	margin-top: 0.35rem;
+}
+
+.introFour,
+.introFive {
+	list-style: none;
+	margin-left: 1.35rem;
+	padding: 0;
+    float:left;
+}
+
+.introFour {
+	margin-bottom: 0!important;
+}
+
+.introFive {
+	margin-bottom: 0!important;
+}
+
+.projectNum {
+	color: #444;
+	position: absolute;
+	left: 0.6rem;
+	bottom: 1.1rem;
+	font-size: 0.24rem;
+}
+
+.introOneA {
+	color: #444444;
+	font-size: 0.16rem;
+}

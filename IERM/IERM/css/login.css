@@ -1,0 +1,152 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "SimHei";
+}
+
+.warp {
+	background: url(../img/login/loginBack.gif)no-repeat;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+.logoImg {
+	width: 100%;
+	height: 100%;
+}
+
+.logo {
+	width: 14%;
+	height: 6%;
+	position: absolute;
+	top: 4.1vw;
+	left: 5.6vw;
+}
+
+.content {
+	width: 42.7%;
+	margin: 0 auto;
+}
+
+.detail {
+	width: 100%;
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 105%;
+	margin-top: -15%;
+	margin-left: 6%;
+}
+
+.loginBox {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+input {
+	/*outline: none;*/
+	font-size: 1vw;
+}
+
+input::-webkit-input-placeholder {
+	font-size: 1vw;
+	color: #717171;
+	font-family: "SimHei";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+button:hover {
+	background: #28323d;
+}
+
+input:-ms-input-placeholder {
+	font-size: 1vw;
+	color: #717171;
+	font-family: "SimHei";
+}
+
+.account,
+.pwd {
+	width: 43.4%;
+	height: 5.4%;
+	border: none;
+	border-radius: 3px;
+	position: absolute;
+	left: 21.7%;
+	text-indent: 6%;
+}
+
+.account {
+	top: 49%;
+}
+
+.pwd {
+	top: 56.8%;
+}
+
+.code {
+	width: 23.6%;
+	height: 5.4%;
+	position: absolute;
+	border-radius: 3px;
+	border: none;
+	left: 21.7%;
+	top: 64.7%;
+	text-indent: 10%;
+}
+
+.codeImg {
+	width: 17.68%;
+	height: 5.7%;
+	position: absolute;
+	left: 47.4%;
+	top: 64.8%;
+	border-radius: 3px;
+}
+
+.remBtn {
+	position: absolute;
+	left: 21.5%;
+	top: 71.5%;
+	width: 2%;
+	height: 3%;
+	display: inline-block;
+	border: none;
+}
+
+.remWord {
+	position: absolute;
+	left: 26%;
+	top: 72%;
+	font-size: 1vw;
+}
+
+.loginBtn {
+	width: 44.3%;
+	height: 5.5%;
+	position: absolute;
+	border: none;
+	border-radius: 3px;
+	background: #313e4b;
+	color: #fff;
+	font-weight: bold;
+	left: 20.6%;
+	top: 76%;
+	font-size: 1vw;
+	font-family: "SimHei";
+}
+   

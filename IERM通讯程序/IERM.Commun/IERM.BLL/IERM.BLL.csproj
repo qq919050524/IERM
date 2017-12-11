@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{457264A8-75D5-490A-AA30-AEF5BCAEB827}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IERM.BLL</RootNamespace>
+    <AssemblyName>IERM.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmElevatorBLL.cs" />
+    <Compile Include="AlarmLogBLL.cs" />
+    <Compile Include="AlarmSettingBLL.cs" />
+    <Compile Include="AreaInfoBLL.cs" />
+    <Compile Include="CommunicationLogBLL.cs" />
+    <Compile Include="EccmInspectionOrderBLL.cs" />
+    <Compile Include="EccmMaintenanceOrderBLL.cs" />
+    <Compile Include="EccmPlanBLL.cs" />
+    <Compile Include="ElevatorInfoBLL.cs" />
+    <Compile Include="DevInfoBLL.cs" />
+    <Compile Include="DrawerStateBLL.cs" />
+    <Compile Include="MaintenanceSettingBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PumpHouseRdBLL.cs" />
+    <Compile Include="SwitchRoomRdBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IERM.COMMON\IERM.Common.csproj">
+      <Project>{565B6B2F-A313-4016-AC54-0CEC21759C8C}</Project>
+      <Name>IERM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IERM.DAL\IERM.DAL.csproj">
+      <Project>{c4ea593c-c909-4791-9d88-9929454b933f}</Project>
+      <Name>IERM.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IERM.MODEL\IERM.MODEL.csproj">
+      <Project>{c8366859-324f-4e1b-9f49-445a918512b3}</Project>
+      <Name>IERM.MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
